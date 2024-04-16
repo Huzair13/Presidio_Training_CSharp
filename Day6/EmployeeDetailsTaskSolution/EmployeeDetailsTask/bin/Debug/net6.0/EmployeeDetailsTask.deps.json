@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "EmployeeDetailsTask/1.0.0": {
+        "dependencies": {
+          "EmployeeDetailsTaskLibrary": "1.0.0"
+        },
+        "runtime": {
+          "EmployeeDetailsTask.dll": {}
+        }
+      },
+      "EmployeeDetailsTaskLibrary/1.0.0": {
+        "runtime": {
+          "EmployeeDetailsTaskLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EmployeeDetailsTask/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EmployeeDetailsTaskLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
