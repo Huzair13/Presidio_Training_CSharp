@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "BusBookingDALLibrary/1.0.0": {
+        "dependencies": {
+          "BusBookingModelLibrary": "1.0.0"
+        },
+        "runtime": {
+          "BusBookingDALLibrary.dll": {}
+        }
+      },
+      "BusBookingModelLibrary/1.0.0": {
+        "runtime": {
+          "BusBookingModelLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BusBookingDALLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BusBookingModelLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

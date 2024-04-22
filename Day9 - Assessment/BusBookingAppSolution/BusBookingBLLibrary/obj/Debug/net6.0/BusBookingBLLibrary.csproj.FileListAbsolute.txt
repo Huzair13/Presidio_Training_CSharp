@@ -1,0 +1,17 @@
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\bin\Debug\net6.0\BusBookingBLLibrary.deps.json
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\bin\Debug\net6.0\BusBookingBLLibrary.dll
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\bin\Debug\net6.0\BusBookingBLLibrary.pdb
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\bin\Debug\net6.0\BusBookingDALLibrary.dll
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\bin\Debug\net6.0\BusBookingModelLibrary.dll
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\bin\Debug\net6.0\BusBookingDALLibrary.pdb
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\bin\Debug\net6.0\BusBookingModelLibrary.pdb
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\obj\Debug\net6.0\BusBookingBLLibrary.csproj.AssemblyReference.cache
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\obj\Debug\net6.0\BusBookingBLLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\obj\Debug\net6.0\BusBookingBLLibrary.AssemblyInfoInputs.cache
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\obj\Debug\net6.0\BusBookingBLLibrary.AssemblyInfo.cs
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\obj\Debug\net6.0\BusBookingBLLibrary.csproj.CoreCompileInputs.cache
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\obj\Debug\net6.0\BusBooki.D34DD04A.Up2Date
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\obj\Debug\net6.0\BusBookingBLLibrary.dll
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\obj\Debug\net6.0\refint\BusBookingBLLibrary.dll
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\obj\Debug\net6.0\BusBookingBLLibrary.pdb
+C:\Users\VC\source\repos\Day9 - Assessment\BusBookingAppSolution\BusBookingBLLibrary\obj\Debug\net6.0\ref\BusBookingBLLibrary.dll
