@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "RequestTrackerBLLibrary/1.0.0": {
+        "dependencies": {
+          "RequestTrackerDALLibrary": "1.0.0"
+        },
+        "runtime": {
+          "RequestTrackerBLLibrary.dll": {}
+        }
+      },
+      "RequestTrackerAppModelLibrary/1.0.0": {
+        "runtime": {
+          "RequestTrackerAppModelLibrary.dll": {}
+        }
+      },
+      "RequestTrackerDALLibrary/1.0.0": {
+        "dependencies": {
+          "RequestTrackerAppModelLibrary": "1.0.0"
+        },
+        "runtime": {
+          "RequestTrackerDALLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RequestTrackerBLLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RequestTrackerAppModelLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RequestTrackerDALLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
