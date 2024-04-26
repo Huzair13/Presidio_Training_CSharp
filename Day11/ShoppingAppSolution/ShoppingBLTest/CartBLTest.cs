@@ -75,6 +75,38 @@ namespace ShoppingBLTest
             Assert.NotNull(result);
         }
 
+
+        [Test]
+        public void CreateCartExceptionTest()
+        {
+            //Action
+            var exception = Assert.Throws<CartAlreadyExistsForTheGivenCustomer>(() => cartServices.CreateCart(1));
+
+            //Assert
+            Assert.AreEqual("Cart for the customer already exists", exception.Message);
+        }
+
+        [Test] 
+        public void GetCartByCustomerIdSucessTest()
+        {
+            //Action
+            var cartResult = cartServices.GetCartByCustomerID(1);
+
+            //assert
+            Assert.AreEqual(cartResult.CustomerId,1);
+        }
+
+
+        [Test]
+        public void GetCartByCustomerIdExceptionTest()
+        {
+            //Action
+            var exception = Assert.Throws<NoCartFoundForTheCustomerIdGivenException>(() => cartServices.GetCartByCustomerID(2));
+
+            //Assert
+            Assert.AreEqual("Cart for the customer not exists", exception.Message);
+        }
+
         [Test]
         public void AddCartItemSuccessTest()
         {

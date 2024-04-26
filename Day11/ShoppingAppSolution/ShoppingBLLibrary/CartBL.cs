@@ -15,12 +15,27 @@ namespace ShoppingBLLibrary
         }
         public Cart CreateCart(int customerId)
         {
+            var existingCartForCustomer = _cartRepository.GetAll().FirstOrDefault(c=> c.CustomerId==customerId);
+            if (existingCartForCustomer != null)
+            {
+                throw new CartAlreadyExistsForTheGivenCustomer();
+            }
             Cart cart = new Cart
             {
                 CustomerId = customerId,
                 CartItems = new List<CartItem>()
             };
             return _cartRepository.Add(cart);
+        }
+
+        public Cart GetCartByCustomerID(int customerId)
+        {
+            var cartByCustomerId=_cartRepository.GetAll().FirstOrDefault(c=>c.CustomerId==customerId);
+            if(cartByCustomerId != null)
+            {
+                return cartByCustomerId;
+            }
+            throw new NoCartFoundForTheCustomerIdGivenException();
         }
 
         public Cart AddCartItem(int cartId, int productId, int quantity)

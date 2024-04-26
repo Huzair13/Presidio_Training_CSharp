@@ -14,5 +14,6 @@ namespace ShoppingBLLibrary
         Cart RemoveCartItem(int cartId, int productId);
         double CalculateTotalAmountAfterDiscountAndShippingCharge(Cart cart);
         double CalculateCartProductAmount(Cart cart);
+        Cart GetCartByCustomerID(int CustomerId);
     }
 }
