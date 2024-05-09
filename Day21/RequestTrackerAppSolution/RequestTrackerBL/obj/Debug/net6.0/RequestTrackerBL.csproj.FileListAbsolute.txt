@@ -1,0 +1,17 @@
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\bin\Debug\net6.0\RequestTrackerBL.deps.json
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\bin\Debug\net6.0\RequestTrackerBL.dll
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\bin\Debug\net6.0\RequestTrackerBL.pdb
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\bin\Debug\net6.0\RequestTrackerDALLibrary.dll
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\bin\Debug\net6.0\RequestTrackerModelLibrary.dll
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\bin\Debug\net6.0\RequestTrackerDALLibrary.pdb
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\bin\Debug\net6.0\RequestTrackerModelLibrary.pdb
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\obj\Debug\net6.0\RequestTrackerBL.csproj.AssemblyReference.cache
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\obj\Debug\net6.0\RequestTrackerBL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\obj\Debug\net6.0\RequestTrackerBL.AssemblyInfoInputs.cache
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\obj\Debug\net6.0\RequestTrackerBL.AssemblyInfo.cs
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\obj\Debug\net6.0\RequestTrackerBL.csproj.CoreCompileInputs.cache
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\obj\Debug\net6.0\RequestT.B961EEE2.Up2Date
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\obj\Debug\net6.0\RequestTrackerBL.dll
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\obj\Debug\net6.0\refint\RequestTrackerBL.dll
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\obj\Debug\net6.0\RequestTrackerBL.pdb
+C:\Users\VC\source\repos\Day21\RequestTrackerAppSolution\RequestTrackerBL\obj\Debug\net6.0\ref\RequestTrackerBL.dll
