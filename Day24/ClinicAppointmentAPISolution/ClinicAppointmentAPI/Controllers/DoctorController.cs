@@ -16,14 +16,14 @@ namespace ClinicAppointmentAPI.Controllers
             _doctorServices = doctorServices;
         }
 
-        [HttpGet]
+        [HttpGet("GetAllDoctors")]
         public async Task<IList<Doctor>> Get()
         {
             var doctors = await _doctorServices.GetDoctors();
             return doctors.ToList();
         }
 
-        [HttpPut]
+        [HttpPut("UpdateDoctorExp")]
         public async Task<ActionResult<Doctor>> Put(int id, double experience)
         {
             try
