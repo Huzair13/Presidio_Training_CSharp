@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+.addCard{
+    background: linear-gradient(to bottom, #f9d0a5,#fbdfc3,#fdefe1);
+    padding: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.addCard div {
+    margin: 10px;
+}
+
+.addCard input{
+    border-radius: 5px;
+}
+
+.submitButton {
+    border: 1px #95795d solid;
+    border-radius: 5px;
+    background-color: #fdefe1;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton:hover{
+    background-color: #95795d;
+    color: white;
+}
