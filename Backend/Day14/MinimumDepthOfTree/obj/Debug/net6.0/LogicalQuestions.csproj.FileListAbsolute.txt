@@ -1,0 +1,14 @@
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\bin\Debug\net6.0\LogicalQuestions.exe
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\bin\Debug\net6.0\LogicalQuestions.deps.json
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\bin\Debug\net6.0\LogicalQuestions.runtimeconfig.json
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\bin\Debug\net6.0\LogicalQuestions.dll
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\bin\Debug\net6.0\LogicalQuestions.pdb
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\LogicalQuestions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\LogicalQuestions.AssemblyInfoInputs.cache
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\LogicalQuestions.AssemblyInfo.cs
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\LogicalQuestions.csproj.CoreCompileInputs.cache
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\LogicalQuestions.dll
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\refint\LogicalQuestions.dll
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\LogicalQuestions.pdb
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\LogicalQuestions.genruntimeconfig.cache
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\ref\LogicalQuestions.dll

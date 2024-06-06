@@ -1,0 +1,14 @@
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\bin\Debug\net6.0\MinimumDepthOfTree.exe
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\bin\Debug\net6.0\MinimumDepthOfTree.deps.json
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\bin\Debug\net6.0\MinimumDepthOfTree.runtimeconfig.json
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\bin\Debug\net6.0\MinimumDepthOfTree.dll
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\bin\Debug\net6.0\MinimumDepthOfTree.pdb
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\MinimumDepthOfTree.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\MinimumDepthOfTree.AssemblyInfoInputs.cache
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\MinimumDepthOfTree.AssemblyInfo.cs
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\MinimumDepthOfTree.csproj.CoreCompileInputs.cache
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\MinimumDepthOfTree.dll
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\refint\MinimumDepthOfTree.dll
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\MinimumDepthOfTree.pdb
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\MinimumDepthOfTree.genruntimeconfig.cache
+C:\Users\VC\source\repos\Day14\LogicalQuesrionsSolution\LogicalQuesrions\obj\Debug\net6.0\ref\MinimumDepthOfTree.dll

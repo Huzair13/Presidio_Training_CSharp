@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\source\\repos\\Day6\\EmployeeDetailsTaskSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC4CA643-8B43-45A8-BC2B-6B2F64D0B5B5}|EmployeeDetailsTaskLibrary\\EmployeeDetailsTaskLibrary.csproj|c:\\users\\vc\\source\\repos\\day6\\employeedetailstasksolution\\employeedetailstasklibrary\\igovrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC4CA643-8B43-45A8-BC2B-6B2F64D0B5B5}|EmployeeDetailsTaskLibrary\\EmployeeDetailsTaskLibrary.csproj|solutionrelative:employeedetailstasklibrary\\igovrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC4CA643-8B43-45A8-BC2B-6B2F64D0B5B5}|EmployeeDetailsTaskLibrary\\EmployeeDetailsTaskLibrary.csproj|c:\\users\\vc\\source\\repos\\day6\\employeedetailstasksolution\\employeedetailstasklibrary\\abc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC4CA643-8B43-45A8-BC2B-6B2F64D0B5B5}|EmployeeDetailsTaskLibrary\\EmployeeDetailsTaskLibrary.csproj|solutionrelative:employeedetailstasklibrary\\abc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC4CA643-8B43-45A8-BC2B-6B2F64D0B5B5}|EmployeeDetailsTaskLibrary\\EmployeeDetailsTaskLibrary.csproj|c:\\users\\vc\\source\\repos\\day6\\employeedetailstasksolution\\employeedetailstasklibrary\\xyz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC4CA643-8B43-45A8-BC2B-6B2F64D0B5B5}|EmployeeDetailsTaskLibrary\\EmployeeDetailsTaskLibrary.csproj|solutionrelative:employeedetailstasklibrary\\xyz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3CD70B-2653-483C-90A0-5A547C7DF5FA}|EmployeeDetailsTask\\EmployeeDetailsTask.csproj|c:\\users\\vc\\source\\repos\\day6\\employeedetailstasksolution\\employeedetailstask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3CD70B-2653-483C-90A0-5A547C7DF5FA}|EmployeeDetailsTask\\EmployeeDetailsTask.csproj|solutionrelative:employeedetailstask\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "XYZ.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\source\\repos\\Day6\\EmployeeDetailsTaskSolution\\EmployeeDetailsTaskLibrary\\XYZ.cs",
+              "RelativeDocumentMoniker": "EmployeeDetailsTaskLibrary\\XYZ.cs",
+              "ToolTip": "C:\\Users\\VC\\source\\repos\\Day6\\EmployeeDetailsTaskSolution\\EmployeeDetailsTaskLibrary\\XYZ.cs",
+              "RelativeToolTip": "EmployeeDetailsTaskLibrary\\XYZ.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T09:13:58.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ABC.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\source\\repos\\Day6\\EmployeeDetailsTaskSolution\\EmployeeDetailsTaskLibrary\\ABC.cs",
+              "RelativeDocumentMoniker": "EmployeeDetailsTaskLibrary\\ABC.cs",
+              "ToolTip": "C:\\Users\\VC\\source\\repos\\Day6\\EmployeeDetailsTaskSolution\\EmployeeDetailsTaskLibrary\\ABC.cs",
+              "RelativeToolTip": "EmployeeDetailsTaskLibrary\\ABC.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAuwDcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T09:13:02.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IGovRules.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\source\\repos\\Day6\\EmployeeDetailsTaskSolution\\EmployeeDetailsTaskLibrary\\IGovRules.cs",
+              "RelativeDocumentMoniker": "EmployeeDetailsTaskLibrary\\IGovRules.cs",
+              "ToolTip": "C:\\Users\\VC\\source\\repos\\Day6\\EmployeeDetailsTaskSolution\\EmployeeDetailsTaskLibrary\\IGovRules.cs",
+              "RelativeToolTip": "EmployeeDetailsTaskLibrary\\IGovRules.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T09:03:14.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\source\\repos\\Day6\\EmployeeDetailsTaskSolution\\EmployeeDetailsTask\\Program.cs",
+              "RelativeDocumentMoniker": "EmployeeDetailsTask\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\source\\repos\\Day6\\EmployeeDetailsTaskSolution\\EmployeeDetailsTask\\Program.cs",
+              "RelativeToolTip": "EmployeeDetailsTask\\Program.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwDgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T09:01:14.601Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

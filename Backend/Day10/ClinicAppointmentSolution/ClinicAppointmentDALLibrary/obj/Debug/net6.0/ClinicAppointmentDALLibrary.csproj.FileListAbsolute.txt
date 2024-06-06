@@ -1,0 +1,15 @@
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\obj\Debug\net6.0\ClinicAppointmentDALLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\obj\Debug\net6.0\ClinicAppointmentDALLibrary.AssemblyInfoInputs.cache
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\obj\Debug\net6.0\ClinicAppointmentDALLibrary.AssemblyInfo.cs
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\obj\Debug\net6.0\ClinicAppointmentDALLibrary.csproj.CoreCompileInputs.cache
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\bin\Debug\net6.0\ClinicAppointmentDALLibrary.deps.json
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\bin\Debug\net6.0\ClinicAppointmentDALLibrary.dll
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\bin\Debug\net6.0\ClinicAppointmentDALLibrary.pdb
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\bin\Debug\net6.0\ClinicAppointmentModelLibrary.dll
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\bin\Debug\net6.0\ClinicAppointmentModelLibrary.pdb
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\obj\Debug\net6.0\ClinicAppointmentDALLibrary.csproj.AssemblyReference.cache
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\obj\Debug\net6.0\ClinicAp.0D463119.Up2Date
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\obj\Debug\net6.0\ClinicAppointmentDALLibrary.dll
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\obj\Debug\net6.0\refint\ClinicAppointmentDALLibrary.dll
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\obj\Debug\net6.0\ClinicAppointmentDALLibrary.pdb
+C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\obj\Debug\net6.0\ref\ClinicAppointmentDALLibrary.dll

@@ -1,0 +1,17 @@
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\obj\Debug\net6.0\ShoppingBLLibrary.csproj.AssemblyReference.cache
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\obj\Debug\net6.0\ShoppingBLLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\obj\Debug\net6.0\ShoppingBLLibrary.AssemblyInfoInputs.cache
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\obj\Debug\net6.0\ShoppingBLLibrary.AssemblyInfo.cs
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\obj\Debug\net6.0\ShoppingBLLibrary.csproj.CoreCompileInputs.cache
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\bin\Debug\net6.0\ShoppingBLLibrary.deps.json
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\bin\Debug\net6.0\ShoppingBLLibrary.dll
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\bin\Debug\net6.0\ShoppingBLLibrary.pdb
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\bin\Debug\net6.0\ShoppingDALLibrary.dll
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\bin\Debug\net6.0\ShoppingModelLibrary.dll
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\bin\Debug\net6.0\ShoppingDALLibrary.pdb
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\bin\Debug\net6.0\ShoppingModelLibrary.pdb
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\obj\Debug\net6.0\Shopping.908EF466.Up2Date
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\obj\Debug\net6.0\ShoppingBLLibrary.dll
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\obj\Debug\net6.0\refint\ShoppingBLLibrary.dll
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\obj\Debug\net6.0\ShoppingBLLibrary.pdb
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingBLLibrary\obj\Debug\net6.0\ref\ShoppingBLLibrary.dll

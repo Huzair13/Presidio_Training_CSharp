@@ -1,0 +1,11 @@
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingModelLibrary\bin\Debug\net6.0\ShoppingModelLibrary.deps.json
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingModelLibrary\bin\Debug\net6.0\ShoppingModelLibrary.dll
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingModelLibrary\bin\Debug\net6.0\ShoppingModelLibrary.pdb
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingModelLibrary\obj\Debug\net6.0\ShoppingModelLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingModelLibrary\obj\Debug\net6.0\ShoppingModelLibrary.AssemblyInfoInputs.cache
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingModelLibrary\obj\Debug\net6.0\ShoppingModelLibrary.AssemblyInfo.cs
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingModelLibrary\obj\Debug\net6.0\ShoppingModelLibrary.csproj.CoreCompileInputs.cache
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingModelLibrary\obj\Debug\net6.0\ShoppingModelLibrary.dll
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingModelLibrary\obj\Debug\net6.0\refint\ShoppingModelLibrary.dll
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingModelLibrary\obj\Debug\net6.0\ShoppingModelLibrary.pdb
+C:\Users\VC\source\repos\Day11\SoppingAppSolution\ShoppingModelLibrary\obj\Debug\net6.0\ref\ShoppingModelLibrary.dll

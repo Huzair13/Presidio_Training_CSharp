@@ -1,0 +1,3 @@
+Data Source=DESKTOP-92EC60F\\SQLEXPRESS;Integrated Security=true;Initial Catalog=dbEmployeeTracker
+
+Scaffold-DbContext "Data Source=DESKTOP-92EC60F\\SQLEXPRESS;Integrated Security=true;Initial Catalog=dbEmployeeTracker" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Model

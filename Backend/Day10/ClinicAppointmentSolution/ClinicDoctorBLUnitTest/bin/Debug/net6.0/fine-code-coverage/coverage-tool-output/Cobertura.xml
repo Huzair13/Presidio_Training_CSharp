@@ -1,0 +1,2303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.926923076923077" branch-rate="0.935185185185185" lines-covered="723" lines-valid="780" branches-covered="101" branches-valid="108" complexity="215" version="0" timestamp="1713903848">
+  <sources>
+    <source>C:\Users\VC\</source>
+  </sources>
+  <packages>
+    <package name="ClinicAppointmentBLLibrary" line-rate="0.930894308943089" branch-rate="0.984848484848485" complexity="85">
+      <classes>
+        <class name="ClinicAppointmentBLLibrary.AppointmentBL" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentBLLibrary\AppointmentBL.cs" line-rate="1" branch-rate="1" complexity="19">
+          <methods>
+            <method name="AddAppointment" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="23" hits="2" branch="false" />
+                <line number="24" hits="2" branch="false" />
+                <line number="25" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="29" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="CancelAppointmentByID" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="33" hits="2" branch="false" />
+                <line number="34" hits="2" branch="false" />
+                <line number="35" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="36" hits="1" branch="false" />
+                <line number="37" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="DeleteAppointment" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="43" hits="3" branch="false" />
+                <line number="44" hits="3" branch="false" />
+                <line number="45" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="46" hits="2" branch="false" />
+                <line number="47" hits="2" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAllAppointments" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="54" hits="2" branch="false" />
+                <line number="55" hits="2" branch="false" />
+                <line number="56" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="57" hits="1" branch="false" />
+                <line number="58" hits="1" branch="false" />
+                <line number="60" hits="1" branch="false" />
+                <line number="61" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAppointmentByDoctorId" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="64" hits="2" branch="false" />
+                <line number="65" hits="4" branch="false" />
+                <line number="66" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="67" hits="1" branch="false" />
+                <line number="68" hits="1" branch="false" />
+                <line number="70" hits="1" branch="false" />
+                <line number="71" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAppointmentByPatientID" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="74" hits="2" branch="false" />
+                <line number="75" hits="4" branch="false" />
+                <line number="76" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="77" hits="1" branch="false" />
+                <line number="78" hits="1" branch="false" />
+                <line number="80" hits="1" branch="false" />
+                <line number="81" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetApppointmentByID" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="84" hits="2" branch="false" />
+                <line number="85" hits="2" branch="false" />
+                <line number="86" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="87" hits="1" branch="false" />
+                <line number="88" hits="1" branch="false" />
+                <line number="90" hits="1" branch="false" />
+                <line number="91" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="RescheduleAppointmentByID" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="94" hits="2" branch="false" />
+                <line number="95" hits="2" branch="false" />
+                <line number="96" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="97" hits="1" branch="false" />
+                <line number="98" hits="1" branch="false" />
+                <line number="99" hits="1" branch="false" />
+                <line number="100" hits="1" branch="false" />
+                <line number="102" hits="1" branch="false" />
+                <line number="103" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="UpdateAppointment" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="106" hits="2" branch="false" />
+                <line number="107" hits="2" branch="false" />
+                <line number="108" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="109" hits="1" branch="false" />
+                <line number="110" hits="1" branch="false" />
+                <line number="112" hits="1" branch="false" />
+                <line number="113" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="18" branch="false" />
+                <line number="17" hits="18" branch="false" />
+                <line number="19" hits="18" branch="false" />
+                <line number="20" hits="18" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="16" hits="18" branch="false" />
+            <line number="17" hits="18" branch="false" />
+            <line number="19" hits="18" branch="false" />
+            <line number="20" hits="18" branch="false" />
+            <line number="23" hits="2" branch="false" />
+            <line number="24" hits="2" branch="false" />
+            <line number="25" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="29" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="33" hits="2" branch="false" />
+            <line number="34" hits="2" branch="false" />
+            <line number="35" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="36" hits="1" branch="false" />
+            <line number="37" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="43" hits="3" branch="false" />
+            <line number="44" hits="3" branch="false" />
+            <line number="45" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="46" hits="2" branch="false" />
+            <line number="47" hits="2" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="2" branch="false" />
+            <line number="54" hits="2" branch="false" />
+            <line number="55" hits="2" branch="false" />
+            <line number="56" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="57" hits="1" branch="false" />
+            <line number="58" hits="1" branch="false" />
+            <line number="60" hits="1" branch="false" />
+            <line number="61" hits="1" branch="false" />
+            <line number="64" hits="2" branch="false" />
+            <line number="65" hits="4" branch="false" />
+            <line number="66" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="67" hits="1" branch="false" />
+            <line number="68" hits="1" branch="false" />
+            <line number="70" hits="1" branch="false" />
+            <line number="71" hits="1" branch="false" />
+            <line number="74" hits="2" branch="false" />
+            <line number="75" hits="4" branch="false" />
+            <line number="76" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="77" hits="1" branch="false" />
+            <line number="78" hits="1" branch="false" />
+            <line number="80" hits="1" branch="false" />
+            <line number="81" hits="1" branch="false" />
+            <line number="84" hits="2" branch="false" />
+            <line number="85" hits="2" branch="false" />
+            <line number="86" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="87" hits="1" branch="false" />
+            <line number="88" hits="1" branch="false" />
+            <line number="90" hits="1" branch="false" />
+            <line number="91" hits="1" branch="false" />
+            <line number="94" hits="2" branch="false" />
+            <line number="95" hits="2" branch="false" />
+            <line number="96" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="97" hits="1" branch="false" />
+            <line number="98" hits="1" branch="false" />
+            <line number="99" hits="1" branch="false" />
+            <line number="100" hits="1" branch="false" />
+            <line number="102" hits="1" branch="false" />
+            <line number="103" hits="1" branch="false" />
+            <line number="106" hits="2" branch="false" />
+            <line number="107" hits="2" branch="false" />
+            <line number="108" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="109" hits="1" branch="false" />
+            <line number="110" hits="1" branch="false" />
+            <line number="112" hits="1" branch="false" />
+            <line number="113" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicAppointmentBLLibrary.CustomException.AppointmentNotFoundException" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentBLLibrary\CustomException\AppointmentNotFoundException.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="8" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="8" branch="false" />
+                <line number="13" hits="8" branch="false" />
+                <line number="14" hits="8" branch="false" />
+                <line number="15" hits="8" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="8" branch="false" />
+            <line number="13" hits="8" branch="false" />
+            <line number="14" hits="8" branch="false" />
+            <line number="15" hits="8" branch="false" />
+            <line number="16" hits="8" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicAppointmentBLLibrary.CustomException.DoctorNotFoundException" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentBLLibrary\CustomException\DoctorNotFoundException.cs" line-rate="0.555555555555556" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="9" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="9" branch="false" />
+                <line number="13" hits="9" branch="false" />
+                <line number="14" hits="9" branch="false" />
+                <line number="15" hits="9" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="9" branch="false" />
+            <line number="13" hits="9" branch="false" />
+            <line number="14" hits="9" branch="false" />
+            <line number="15" hits="9" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="9" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicAppointmentBLLibrary.CustomException.DuplicateAppointmentException" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentBLLibrary\CustomException\DuplicateAppointmentException.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="1" branch="false" />
+                <line number="13" hits="1" branch="false" />
+                <line number="14" hits="1" branch="false" />
+                <line number="15" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="1" branch="false" />
+            <line number="13" hits="1" branch="false" />
+            <line number="14" hits="1" branch="false" />
+            <line number="15" hits="1" branch="false" />
+            <line number="16" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicAppointmentBLLibrary.CustomException.DuplicateDoctorException" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentBLLibrary\CustomException\DuplicateDoctorException.cs" line-rate="0.555555555555556" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="1" branch="false" />
+                <line number="13" hits="1" branch="false" />
+                <line number="14" hits="1" branch="false" />
+                <line number="15" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="1" branch="false" />
+            <line number="13" hits="1" branch="false" />
+            <line number="14" hits="1" branch="false" />
+            <line number="15" hits="1" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicAppointmentBLLibrary.CustomException.DuplicatePatientException" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentBLLibrary\CustomException\DuplicatePatientException.cs" line-rate="0.555555555555556" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="1" branch="false" />
+                <line number="13" hits="1" branch="false" />
+                <line number="14" hits="1" branch="false" />
+                <line number="15" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="1" branch="false" />
+            <line number="13" hits="1" branch="false" />
+            <line number="14" hits="1" branch="false" />
+            <line number="15" hits="1" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicAppointmentBLLibrary.CustomException.PatientNotFoundException" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentBLLibrary\CustomException\PatientNotFoundException.cs" line-rate="0.555555555555556" branch-rate="1" complexity="3">
+          <methods>
+            <method name="get_Message" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="7" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="7" branch="false" />
+                <line number="13" hits="7" branch="false" />
+                <line number="14" hits="7" branch="false" />
+                <line number="15" hits="7" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="7" branch="false" />
+            <line number="13" hits="7" branch="false" />
+            <line number="14" hits="7" branch="false" />
+            <line number="15" hits="7" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="7" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicAppointmentBLLibrary.DoctorBL" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentBLLibrary\DoctorBL.cs" line-rate="0.985507246376812" branch-rate="0.958333333333333" complexity="25">
+          <methods>
+            <method name="AddDoctor" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="16" hits="3" branch="false" />
+                <line number="17" hits="3" branch="false" />
+                <line number="18" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="19" hits="2" branch="false" />
+                <line number="20" hits="2" branch="false" />
+                <line number="22" hits="1" branch="false" />
+                <line number="23" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="ChangeDoctorName" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="26" hits="2" branch="false" />
+                <line number="27" hits="4" branch="false" />
+                <line number="28" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="29" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+                <line number="31" hits="1" branch="false" />
+                <line number="32" hits="1" branch="false" />
+                <line number="34" hits="1" branch="false" />
+                <line number="35" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="DeleteDoctorById" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="38" hits="4" branch="false" />
+                <line number="39" hits="4" branch="false" />
+                <line number="40" hits="4" branch="true" condition-coverage="100% (2/2)" />
+                <line number="41" hits="3" branch="false" />
+                <line number="42" hits="3" branch="false" />
+                <line number="45" hits="1" branch="false" />
+                <line number="47" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAllDoctors" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="50" hits="2" branch="false" />
+                <line number="51" hits="2" branch="false" />
+                <line number="52" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
+                <line number="56" hits="1" branch="false" />
+                <line number="57" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAvailableDoctors" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="60" hits="2" branch="false" />
+                <line number="61" hits="2" branch="false" />
+                <line number="62" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="63" hits="1" branch="false" />
+                <line number="64" hits="2" branch="false" />
+                <line number="66" hits="1" branch="false" />
+                <line number="67" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorAvailalityByID" signature="(...)" line-rate="0.857142857142857" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="70" hits="4" branch="false" />
+                <line number="71" hits="4" branch="false" />
+                <line number="72" hits="2" branch="true" condition-coverage="50% (1/2)" />
+                <line number="73" hits="2" branch="false" />
+                <line number="74" hits="2" branch="false" />
+                <line number="76" hits="0" branch="false" />
+                <line number="77" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorById" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="80" hits="6" branch="false" />
+                <line number="81" hits="6" branch="false" />
+                <line number="82" hits="20" branch="true" condition-coverage="100% (2/2)" />
+                <line number="83" hits="7" branch="true" condition-coverage="100% (2/2)" />
+                <line number="84" hits="3" branch="false" />
+                <line number="85" hits="3" branch="false" />
+                <line number="86" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorByName" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="89" hits="2" branch="false" />
+                <line number="90" hits="2" branch="false" />
+                <line number="91" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="92" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="93" hits="1" branch="false" />
+                <line number="94" hits="1" branch="false" />
+                <line number="95" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorBySpecialization" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="98" hits="2" branch="false" />
+                <line number="99" hits="2" branch="false" />
+                <line number="100" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="101" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="102" hits="1" branch="false" />
+                <line number="103" hits="1" branch="false" />
+                <line number="104" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="20" branch="false" />
+                <line number="10" hits="20" branch="false" />
+                <line number="12" hits="20" branch="false" />
+                <line number="13" hits="20" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="20" branch="false" />
+            <line number="10" hits="20" branch="false" />
+            <line number="12" hits="20" branch="false" />
+            <line number="13" hits="20" branch="false" />
+            <line number="16" hits="3" branch="false" />
+            <line number="17" hits="3" branch="false" />
+            <line number="18" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="19" hits="2" branch="false" />
+            <line number="20" hits="2" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="23" hits="2" branch="false" />
+            <line number="26" hits="2" branch="false" />
+            <line number="27" hits="4" branch="false" />
+            <line number="28" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="29" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="31" hits="1" branch="false" />
+            <line number="32" hits="1" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="38" hits="4" branch="false" />
+            <line number="39" hits="4" branch="false" />
+            <line number="40" hits="4" branch="true" condition-coverage="100% (2/2)" />
+            <line number="41" hits="3" branch="false" />
+            <line number="42" hits="3" branch="false" />
+            <line number="45" hits="1" branch="false" />
+            <line number="47" hits="3" branch="false" />
+            <line number="50" hits="2" branch="false" />
+            <line number="51" hits="2" branch="false" />
+            <line number="52" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="53" hits="1" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="56" hits="1" branch="false" />
+            <line number="57" hits="1" branch="false" />
+            <line number="60" hits="2" branch="false" />
+            <line number="61" hits="2" branch="false" />
+            <line number="62" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="63" hits="1" branch="false" />
+            <line number="64" hits="2" branch="false" />
+            <line number="66" hits="1" branch="false" />
+            <line number="67" hits="1" branch="false" />
+            <line number="70" hits="4" branch="false" />
+            <line number="71" hits="4" branch="false" />
+            <line number="72" hits="2" branch="true" condition-coverage="50% (1/2)" />
+            <line number="73" hits="2" branch="false" />
+            <line number="74" hits="2" branch="false" />
+            <line number="76" hits="0" branch="false" />
+            <line number="77" hits="2" branch="false" />
+            <line number="80" hits="6" branch="false" />
+            <line number="81" hits="6" branch="false" />
+            <line number="82" hits="20" branch="true" condition-coverage="100% (2/2)" />
+            <line number="83" hits="7" branch="true" condition-coverage="100% (2/2)" />
+            <line number="84" hits="3" branch="false" />
+            <line number="85" hits="3" branch="false" />
+            <line number="86" hits="3" branch="false" />
+            <line number="89" hits="2" branch="false" />
+            <line number="90" hits="2" branch="false" />
+            <line number="91" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="92" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="93" hits="1" branch="false" />
+            <line number="94" hits="1" branch="false" />
+            <line number="95" hits="1" branch="false" />
+            <line number="98" hits="2" branch="false" />
+            <line number="99" hits="2" branch="false" />
+            <line number="100" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="101" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="102" hits="1" branch="false" />
+            <line number="103" hits="1" branch="false" />
+            <line number="104" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicAppointmentBLLibrary.PatientBL" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentBLLibrary\PatientBL.cs" line-rate="1" branch-rate="1" complexity="25">
+          <methods>
+            <method name="AddPatient" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="24" hits="2" branch="false" />
+                <line number="25" hits="2" branch="false" />
+                <line number="26" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+                <line number="31" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="DeletePatientById" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="34" hits="3" branch="false" />
+                <line number="35" hits="3" branch="false" />
+                <line number="36" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="37" hits="2" branch="false" />
+                <line number="38" hits="2" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAllPatient" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="45" hits="2" branch="false" />
+                <line number="46" hits="2" branch="false" />
+                <line number="47" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="48" hits="1" branch="false" />
+                <line number="49" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+                <line number="52" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetPatientByAdmitDate" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="55" hits="2" branch="false" />
+                <line number="56" hits="2" branch="false" />
+                <line number="57" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="58" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="59" hits="1" branch="false" />
+                <line number="60" hits="1" branch="false" />
+                <line number="61" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetPatientById" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="64" hits="2" branch="false" />
+                <line number="65" hits="2" branch="false" />
+                <line number="66" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="67" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="68" hits="1" branch="false" />
+                <line number="69" hits="1" branch="false" />
+                <line number="70" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetPatientByName" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="73" hits="2" branch="false" />
+                <line number="74" hits="2" branch="false" />
+                <line number="75" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="76" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="77" hits="1" branch="false" />
+                <line number="78" hits="1" branch="false" />
+                <line number="79" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetPatientByPurpose" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="82" hits="2" branch="false" />
+                <line number="83" hits="2" branch="false" />
+                <line number="84" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="85" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="86" hits="1" branch="false" />
+                <line number="87" hits="1" branch="false" />
+                <line number="88" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="UpdatePatientName" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="91" hits="2" branch="false" />
+                <line number="92" hits="4" branch="false" />
+                <line number="93" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="94" hits="1" branch="false" />
+                <line number="95" hits="1" branch="false" />
+                <line number="96" hits="1" branch="false" />
+                <line number="97" hits="1" branch="false" />
+                <line number="99" hits="1" branch="false" />
+                <line number="100" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="16" branch="false" />
+                <line number="18" hits="16" branch="false" />
+                <line number="20" hits="16" branch="false" />
+                <line number="21" hits="16" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="16" branch="false" />
+            <line number="18" hits="16" branch="false" />
+            <line number="20" hits="16" branch="false" />
+            <line number="21" hits="16" branch="false" />
+            <line number="24" hits="2" branch="false" />
+            <line number="25" hits="2" branch="false" />
+            <line number="26" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="27" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="31" hits="1" branch="false" />
+            <line number="34" hits="3" branch="false" />
+            <line number="35" hits="3" branch="false" />
+            <line number="36" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="37" hits="2" branch="false" />
+            <line number="38" hits="2" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="2" branch="false" />
+            <line number="45" hits="2" branch="false" />
+            <line number="46" hits="2" branch="false" />
+            <line number="47" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="48" hits="1" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="55" hits="2" branch="false" />
+            <line number="56" hits="2" branch="false" />
+            <line number="57" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="58" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="59" hits="1" branch="false" />
+            <line number="60" hits="1" branch="false" />
+            <line number="61" hits="1" branch="false" />
+            <line number="64" hits="2" branch="false" />
+            <line number="65" hits="2" branch="false" />
+            <line number="66" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="67" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="68" hits="1" branch="false" />
+            <line number="69" hits="1" branch="false" />
+            <line number="70" hits="1" branch="false" />
+            <line number="73" hits="2" branch="false" />
+            <line number="74" hits="2" branch="false" />
+            <line number="75" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="76" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="77" hits="1" branch="false" />
+            <line number="78" hits="1" branch="false" />
+            <line number="79" hits="1" branch="false" />
+            <line number="82" hits="2" branch="false" />
+            <line number="83" hits="2" branch="false" />
+            <line number="84" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="85" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="86" hits="1" branch="false" />
+            <line number="87" hits="1" branch="false" />
+            <line number="88" hits="1" branch="false" />
+            <line number="91" hits="2" branch="false" />
+            <line number="92" hits="4" branch="false" />
+            <line number="93" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="94" hits="1" branch="false" />
+            <line number="95" hits="1" branch="false" />
+            <line number="96" hits="1" branch="false" />
+            <line number="97" hits="1" branch="false" />
+            <line number="99" hits="1" branch="false" />
+            <line number="100" hits="1" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="ClinicAppointmentDALLibrary" line-rate="0.938931297709924" branch-rate="0.857142857142857" complexity="45">
+      <classes>
+        <class name="ClinicAppointmentDALLibrary.AppointmentRepository" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\AppointmentRepository.cs" line-rate="1" branch-rate="1" complexity="15">
+          <methods>
+            <method name="GenerateId" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="19" hits="19" branch="false" />
+                <line number="20" hits="19" branch="true" condition-coverage="100% (2/2)" />
+                <line number="21" hits="18" branch="false" />
+                <line number="22" hits="1" branch="false" />
+                <line number="23" hits="1" branch="false" />
+                <line number="24" hits="19" branch="false" />
+              </lines>
+            </method>
+            <method name="Add" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="28" hits="20" branch="false" />
+                <line number="34" hits="63" branch="true" condition-coverage="100% (2/2)" />
+                <line number="35" hits="2" branch="false" />
+                <line number="36" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="37" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="19" branch="false" />
+                <line number="42" hits="19" branch="false" />
+                <line number="43" hits="19" branch="false" />
+                <line number="44" hits="20" branch="false" />
+              </lines>
+            </method>
+            <method name="Delete" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="47" hits="5" branch="false" />
+                <line number="48" hits="5" branch="true" condition-coverage="100% (2/2)" />
+                <line number="49" hits="3" branch="false" />
+                <line number="50" hits="3" branch="false" />
+                <line number="51" hits="3" branch="false" />
+                <line number="52" hits="3" branch="false" />
+                <line number="54" hits="2" branch="false" />
+                <line number="55" hits="5" branch="false" />
+              </lines>
+            </method>
+            <method name="Get" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="58" hits="4" branch="false" />
+                <line number="59" hits="4" branch="true" condition-coverage="100% (2/2)" />
+                <line number="60" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAll" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="63" hits="6" branch="false" />
+                <line number="64" hits="6" branch="true" condition-coverage="100% (2/2)" />
+                <line number="65" hits="1" branch="false" />
+                <line number="66" hits="5" branch="false" />
+                <line number="67" hits="6" branch="false" />
+              </lines>
+            </method>
+            <method name="Update" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="70" hits="3" branch="false" />
+                <line number="71" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="72" hits="2" branch="false" />
+                <line number="73" hits="2" branch="false" />
+                <line number="74" hits="2" branch="false" />
+                <line number="76" hits="1" branch="false" />
+                <line number="77" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="36" branch="false" />
+                <line number="15" hits="18" branch="false" />
+                <line number="16" hits="18" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="36" branch="false" />
+            <line number="15" hits="18" branch="false" />
+            <line number="16" hits="18" branch="false" />
+            <line number="19" hits="19" branch="false" />
+            <line number="20" hits="19" branch="true" condition-coverage="100% (2/2)" />
+            <line number="21" hits="18" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="23" hits="1" branch="false" />
+            <line number="24" hits="19" branch="false" />
+            <line number="28" hits="20" branch="false" />
+            <line number="34" hits="63" branch="true" condition-coverage="100% (2/2)" />
+            <line number="35" hits="2" branch="false" />
+            <line number="36" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="37" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="19" branch="false" />
+            <line number="42" hits="19" branch="false" />
+            <line number="43" hits="19" branch="false" />
+            <line number="44" hits="20" branch="false" />
+            <line number="47" hits="5" branch="false" />
+            <line number="48" hits="5" branch="true" condition-coverage="100% (2/2)" />
+            <line number="49" hits="3" branch="false" />
+            <line number="50" hits="3" branch="false" />
+            <line number="51" hits="3" branch="false" />
+            <line number="52" hits="3" branch="false" />
+            <line number="54" hits="2" branch="false" />
+            <line number="55" hits="5" branch="false" />
+            <line number="58" hits="4" branch="false" />
+            <line number="59" hits="4" branch="true" condition-coverage="100% (2/2)" />
+            <line number="60" hits="4" branch="false" />
+            <line number="63" hits="6" branch="false" />
+            <line number="64" hits="6" branch="true" condition-coverage="100% (2/2)" />
+            <line number="65" hits="1" branch="false" />
+            <line number="66" hits="5" branch="false" />
+            <line number="67" hits="6" branch="false" />
+            <line number="70" hits="3" branch="false" />
+            <line number="71" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="72" hits="2" branch="false" />
+            <line number="73" hits="2" branch="false" />
+            <line number="74" hits="2" branch="false" />
+            <line number="76" hits="1" branch="false" />
+            <line number="77" hits="3" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicAppointmentDALLibrary.DoctorRepository" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\DoctorRepository.cs" line-rate="0.909090909090909" branch-rate="0.785714285714286" complexity="15">
+          <methods>
+            <method name="GenerateId" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="15" hits="22" branch="false" />
+                <line number="16" hits="22" branch="true" condition-coverage="100% (2/2)" />
+                <line number="17" hits="20" branch="false" />
+                <line number="18" hits="2" branch="false" />
+                <line number="19" hits="2" branch="false" />
+                <line number="20" hits="22" branch="false" />
+              </lines>
+            </method>
+            <method name="Add" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="23" hits="23" branch="false" />
+                <line number="32" hits="74" branch="true" condition-coverage="100% (2/2)" />
+                <line number="33" hits="3" branch="false" />
+                <line number="34" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="35" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
+                <line number="38" hits="2" branch="false" />
+                <line number="40" hits="22" branch="false" />
+                <line number="41" hits="22" branch="false" />
+                <line number="42" hits="22" branch="false" />
+                <line number="43" hits="23" branch="false" />
+              </lines>
+            </method>
+            <method name="Delete" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="46" hits="4" branch="false" />
+                <line number="47" hits="4" branch="true" condition-coverage="100% (2/2)" />
+                <line number="48" hits="3" branch="false" />
+                <line number="49" hits="3" branch="false" />
+                <line number="50" hits="3" branch="false" />
+                <line number="51" hits="3" branch="false" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="4" branch="false" />
+              </lines>
+            </method>
+            <method name="Get" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="57" hits="0" branch="false" />
+                <line number="58" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="59" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAll" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="62" hits="16" branch="false" />
+                <line number="63" hits="16" branch="true" condition-coverage="100% (2/2)" />
+                <line number="64" hits="2" branch="false" />
+                <line number="65" hits="14" branch="false" />
+                <line number="66" hits="16" branch="false" />
+              </lines>
+            </method>
+            <method name="Update" signature="(...)" line-rate="0.857142857142857" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="69" hits="1" branch="false" />
+                <line number="70" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="71" hits="1" branch="false" />
+                <line number="72" hits="1" branch="false" />
+                <line number="73" hits="1" branch="false" />
+                <line number="75" hits="0" branch="false" />
+                <line number="76" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="20" branch="false" />
+                <line number="10" hits="20" branch="false" />
+                <line number="11" hits="20" branch="false" />
+                <line number="12" hits="20" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="20" branch="false" />
+            <line number="10" hits="20" branch="false" />
+            <line number="11" hits="20" branch="false" />
+            <line number="12" hits="20" branch="false" />
+            <line number="15" hits="22" branch="false" />
+            <line number="16" hits="22" branch="true" condition-coverage="100% (2/2)" />
+            <line number="17" hits="20" branch="false" />
+            <line number="18" hits="2" branch="false" />
+            <line number="19" hits="2" branch="false" />
+            <line number="20" hits="22" branch="false" />
+            <line number="23" hits="23" branch="false" />
+            <line number="32" hits="74" branch="true" condition-coverage="100% (2/2)" />
+            <line number="33" hits="3" branch="false" />
+            <line number="34" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="35" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
+            <line number="38" hits="2" branch="false" />
+            <line number="40" hits="22" branch="false" />
+            <line number="41" hits="22" branch="false" />
+            <line number="42" hits="22" branch="false" />
+            <line number="43" hits="23" branch="false" />
+            <line number="46" hits="4" branch="false" />
+            <line number="47" hits="4" branch="true" condition-coverage="100% (2/2)" />
+            <line number="48" hits="3" branch="false" />
+            <line number="49" hits="3" branch="false" />
+            <line number="50" hits="3" branch="false" />
+            <line number="51" hits="3" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="54" hits="4" branch="false" />
+            <line number="57" hits="0" branch="false" />
+            <line number="58" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="59" hits="0" branch="false" />
+            <line number="62" hits="16" branch="false" />
+            <line number="63" hits="16" branch="true" condition-coverage="100% (2/2)" />
+            <line number="64" hits="2" branch="false" />
+            <line number="65" hits="14" branch="false" />
+            <line number="66" hits="16" branch="false" />
+            <line number="69" hits="1" branch="false" />
+            <line number="70" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="71" hits="1" branch="false" />
+            <line number="72" hits="1" branch="false" />
+            <line number="73" hits="1" branch="false" />
+            <line number="75" hits="0" branch="false" />
+            <line number="76" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicAppointmentDALLibrary.PatientRepository" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentDALLibrary\PatientRepository.cs" line-rate="0.909090909090909" branch-rate="0.785714285714286" complexity="15">
+          <methods>
+            <method name="GenerateId" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="16" hits="17" branch="false" />
+                <line number="17" hits="17" branch="true" condition-coverage="100% (2/2)" />
+                <line number="18" hits="16" branch="false" />
+                <line number="19" hits="1" branch="false" />
+                <line number="20" hits="1" branch="false" />
+                <line number="21" hits="17" branch="false" />
+              </lines>
+            </method>
+            <method name="Add" signature="(...)" line-rate="1" branch-rate="1" complexity="4">
+              <lines>
+                <line number="24" hits="18" branch="false" />
+                <line number="25" hits="57" branch="true" condition-coverage="100% (2/2)" />
+                <line number="26" hits="2" branch="false" />
+                <line number="27" hits="2" branch="true" condition-coverage="100% (2/2)" />
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="1" branch="false" />
+                <line number="31" hits="1" branch="false" />
+                <line number="36" hits="17" branch="false" />
+                <line number="37" hits="17" branch="false" />
+                <line number="38" hits="17" branch="false" />
+                <line number="39" hits="18" branch="false" />
+              </lines>
+            </method>
+            <method name="Delete" signature="(...)" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="42" hits="3" branch="false" />
+                <line number="43" hits="3" branch="true" condition-coverage="100% (2/2)" />
+                <line number="44" hits="2" branch="false" />
+                <line number="45" hits="2" branch="false" />
+                <line number="46" hits="2" branch="false" />
+                <line number="47" hits="2" branch="false" />
+                <line number="49" hits="1" branch="false" />
+                <line number="50" hits="3" branch="false" />
+              </lines>
+            </method>
+            <method name="Get" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="53" hits="0" branch="false" />
+                <line number="54" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="55" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAll" signature="()" line-rate="1" branch-rate="1" complexity="2">
+              <lines>
+                <line number="58" hits="12" branch="false" />
+                <line number="59" hits="12" branch="true" condition-coverage="100% (2/2)" />
+                <line number="60" hits="1" branch="false" />
+                <line number="61" hits="11" branch="false" />
+                <line number="62" hits="12" branch="false" />
+              </lines>
+            </method>
+            <method name="Update" signature="(...)" line-rate="0.857142857142857" branch-rate="0.5" complexity="2">
+              <lines>
+                <line number="65" hits="1" branch="false" />
+                <line number="66" hits="1" branch="true" condition-coverage="50% (1/2)" />
+                <line number="67" hits="1" branch="false" />
+                <line number="68" hits="1" branch="false" />
+                <line number="69" hits="1" branch="false" />
+                <line number="71" hits="0" branch="false" />
+                <line number="72" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="16" branch="false" />
+                <line number="11" hits="16" branch="false" />
+                <line number="12" hits="16" branch="false" />
+                <line number="13" hits="16" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="10" hits="16" branch="false" />
+            <line number="11" hits="16" branch="false" />
+            <line number="12" hits="16" branch="false" />
+            <line number="13" hits="16" branch="false" />
+            <line number="16" hits="17" branch="false" />
+            <line number="17" hits="17" branch="true" condition-coverage="100% (2/2)" />
+            <line number="18" hits="16" branch="false" />
+            <line number="19" hits="1" branch="false" />
+            <line number="20" hits="1" branch="false" />
+            <line number="21" hits="17" branch="false" />
+            <line number="24" hits="18" branch="false" />
+            <line number="25" hits="57" branch="true" condition-coverage="100% (2/2)" />
+            <line number="26" hits="2" branch="false" />
+            <line number="27" hits="2" branch="true" condition-coverage="100% (2/2)" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="1" branch="false" />
+            <line number="31" hits="1" branch="false" />
+            <line number="36" hits="17" branch="false" />
+            <line number="37" hits="17" branch="false" />
+            <line number="38" hits="17" branch="false" />
+            <line number="39" hits="18" branch="false" />
+            <line number="42" hits="3" branch="false" />
+            <line number="43" hits="3" branch="true" condition-coverage="100% (2/2)" />
+            <line number="44" hits="2" branch="false" />
+            <line number="45" hits="2" branch="false" />
+            <line number="46" hits="2" branch="false" />
+            <line number="47" hits="2" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="50" hits="3" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="54" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="55" hits="0" branch="false" />
+            <line number="58" hits="12" branch="false" />
+            <line number="59" hits="12" branch="true" condition-coverage="100% (2/2)" />
+            <line number="60" hits="1" branch="false" />
+            <line number="61" hits="11" branch="false" />
+            <line number="62" hits="12" branch="false" />
+            <line number="65" hits="1" branch="false" />
+            <line number="66" hits="1" branch="true" condition-coverage="50% (1/2)" />
+            <line number="67" hits="1" branch="false" />
+            <line number="68" hits="1" branch="false" />
+            <line number="69" hits="1" branch="false" />
+            <line number="71" hits="0" branch="false" />
+            <line number="72" hits="1" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="ClinicAppointmentModelLibrary" line-rate="0.607594936708861" branch-rate="1" complexity="28">
+      <classes>
+        <class name="ClinicAppointmentModelLibrary.Appointment" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentModelLibrary\Appointment.cs" line-rate="0.6" branch-rate="1" complexity="7">
+          <methods>
+            <method name="get_DoctorID" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="50" branch="false" />
+              </lines>
+            </method>
+            <method name="get_PatientID" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="50" branch="false" />
+              </lines>
+            </method>
+            <method name="get_AppointmentID" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="70" branch="false" />
+              </lines>
+            </method>
+            <method name="get_AppointmentDateTime" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Purpose" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="44" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="44" branch="false" />
+                <line number="18" hits="22" branch="false" />
+                <line number="19" hits="22" branch="false" />
+                <line number="20" hits="22" branch="false" />
+                <line number="21" hits="22" branch="false" />
+                <line number="22" hits="22" branch="false" />
+                <line number="23" hits="22" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="0" branch="false" />
+                <line number="26" hits="0" branch="false" />
+                <line number="27" hits="0" branch="false" />
+                <line number="28" hits="0" branch="false" />
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="32" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="50" branch="false" />
+            <line number="12" hits="50" branch="false" />
+            <line number="13" hits="70" branch="false" />
+            <line number="14" hits="46" branch="false" />
+            <line number="15" hits="44" branch="false" />
+            <line number="17" hits="44" branch="false" />
+            <line number="18" hits="22" branch="false" />
+            <line number="19" hits="22" branch="false" />
+            <line number="20" hits="22" branch="false" />
+            <line number="21" hits="22" branch="false" />
+            <line number="22" hits="22" branch="false" />
+            <line number="23" hits="22" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="26" hits="0" branch="false" />
+            <line number="27" hits="0" branch="false" />
+            <line number="28" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="32" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicAppointmentModelLibrary.Doctor" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentModelLibrary\Doctor.cs" line-rate="0.588235294117647" branch-rate="1" complexity="11">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="5" hits="80" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="6" hits="81" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Exp" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="7" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Qualification" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="8" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Specialization" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="72" branch="false" />
+              </lines>
+            </method>
+            <method name="get_IsAvailable" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="49" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Age" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_DateOfBirth" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_DateOfBirth" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="46" branch="false" />
+                <line number="26" hits="46" branch="false" />
+                <line number="27" hits="46" branch="false" />
+                <line number="28" hits="46" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="32" hits="23" branch="false" />
+                <line number="33" hits="23" branch="false" />
+                <line number="34" hits="23" branch="false" />
+                <line number="35" hits="23" branch="false" />
+                <line number="36" hits="23" branch="false" />
+                <line number="37" hits="23" branch="false" />
+                <line number="38" hits="23" branch="false" />
+                <line number="39" hits="23" branch="false" />
+                <line number="40" hits="23" branch="false" />
+                <line number="41" hits="23" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="43" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
+                <line number="45" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+                <line number="49" hits="0" branch="false" />
+                <line number="50" hits="0" branch="false" />
+                <line number="51" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="5" hits="80" branch="false" />
+            <line number="6" hits="81" branch="false" />
+            <line number="7" hits="46" branch="false" />
+            <line number="8" hits="46" branch="false" />
+            <line number="9" hits="72" branch="false" />
+            <line number="12" hits="49" branch="false" />
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="23" hits="0" branch="false" />
+            <line number="25" hits="46" branch="false" />
+            <line number="26" hits="46" branch="false" />
+            <line number="27" hits="46" branch="false" />
+            <line number="28" hits="46" branch="false" />
+            <line number="32" hits="23" branch="false" />
+            <line number="33" hits="23" branch="false" />
+            <line number="34" hits="23" branch="false" />
+            <line number="35" hits="23" branch="false" />
+            <line number="36" hits="23" branch="false" />
+            <line number="37" hits="23" branch="false" />
+            <line number="38" hits="23" branch="false" />
+            <line number="39" hits="23" branch="false" />
+            <line number="40" hits="23" branch="false" />
+            <line number="41" hits="23" branch="false" />
+            <line number="43" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="49" hits="0" branch="false" />
+            <line number="50" hits="0" branch="false" />
+            <line number="51" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicAppointmentModelLibrary.Patient" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicAppointmentModelLibrary\Patient.cs" line-rate="0.64" branch-rate="1" complexity="10">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="59" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="64" branch="false" />
+              </lines>
+            </method>
+            <method name="get_ContactNum" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="36" branch="false" />
+              </lines>
+            </method>
+            <method name="get_purpose" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="15" hits="39" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Age" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_admitDate" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="38" branch="false" />
+              </lines>
+            </method>
+            <method name="get_DateOfBirth" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_DateOfBirth" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="27" hits="36" branch="false" />
+                <line number="28" hits="36" branch="false" />
+                <line number="29" hits="36" branch="false" />
+                <line number="30" hits="36" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="18" branch="false" />
+                <line number="35" hits="18" branch="false" />
+                <line number="36" hits="18" branch="false" />
+                <line number="37" hits="18" branch="false" />
+                <line number="38" hits="18" branch="false" />
+                <line number="39" hits="18" branch="false" />
+                <line number="40" hits="18" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="42" hits="0" branch="false" />
+                <line number="43" hits="0" branch="false" />
+                <line number="44" hits="0" branch="false" />
+                <line number="45" hits="0" branch="false" />
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="59" branch="false" />
+            <line number="12" hits="64" branch="false" />
+            <line number="13" hits="36" branch="false" />
+            <line number="15" hits="39" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="21" hits="38" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="27" hits="36" branch="false" />
+            <line number="28" hits="36" branch="false" />
+            <line number="29" hits="36" branch="false" />
+            <line number="30" hits="36" branch="false" />
+            <line number="34" hits="18" branch="false" />
+            <line number="35" hits="18" branch="false" />
+            <line number="36" hits="18" branch="false" />
+            <line number="37" hits="18" branch="false" />
+            <line number="38" hits="18" branch="false" />
+            <line number="39" hits="18" branch="false" />
+            <line number="40" hits="18" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="43" hits="0" branch="false" />
+            <line number="44" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="ClinicDoctorBLUnitTest" line-rate="0.996913580246914" branch-rate="1" complexity="57">
+      <classes>
+        <class name="AutoGeneratedProgram" filename="C:\Users\VC\.nuget\packages\microsoft.net.test.sdk\17.5.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.Program.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="Main" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="4" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="4" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicDoctorBLUnitTest.AppointmentBLTest" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicDoctorBLUnitTest\AppointmentBLTest.cs" line-rate="1" branch-rate="1" complexity="19">
+          <methods>
+            <method name="Setup" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="18" branch="false" />
+                <line number="20" hits="18" branch="false" />
+                <line number="21" hits="18" branch="false" />
+                <line number="22" hits="18" branch="false" />
+                <line number="23" hits="18" branch="false" />
+                <line number="24" hits="18" branch="false" />
+                <line number="25" hits="18" branch="false" />
+                <line number="26" hits="18" branch="false" />
+                <line number="27" hits="18" branch="false" />
+                <line number="28" hits="18" branch="false" />
+                <line number="29" hits="18" branch="false" />
+                <line number="30" hits="18" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAppointmentByIDSuccessTest" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAppointmentByIDExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="43" hits="1" branch="false" />
+                <line number="45" hits="2" branch="false" />
+                <line number="47" hits="1" branch="false" />
+                <line number="48" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="AddAppointmentSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="53" hits="1" branch="false" />
+                <line number="55" hits="1" branch="false" />
+                <line number="56" hits="1" branch="false" />
+                <line number="57" hits="1" branch="false" />
+                <line number="58" hits="1" branch="false" />
+                <line number="59" hits="1" branch="false" />
+                <line number="60" hits="1" branch="false" />
+                <line number="61" hits="1" branch="false" />
+                <line number="63" hits="1" branch="false" />
+                <line number="66" hits="1" branch="false" />
+                <line number="67" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="AddAppointmentExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="71" hits="1" branch="false" />
+                <line number="73" hits="1" branch="false" />
+                <line number="74" hits="1" branch="false" />
+                <line number="75" hits="1" branch="false" />
+                <line number="76" hits="1" branch="false" />
+                <line number="77" hits="1" branch="false" />
+                <line number="78" hits="1" branch="false" />
+                <line number="79" hits="1" branch="false" />
+                <line number="82" hits="2" branch="false" />
+                <line number="85" hits="1" branch="false" />
+                <line number="86" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="DeleteAppointmentSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="90" hits="1" branch="false" />
+                <line number="92" hits="1" branch="false" />
+                <line number="95" hits="1" branch="false" />
+                <line number="96" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="DeleteAppointmentExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="100" hits="1" branch="false" />
+                <line number="102" hits="2" branch="false" />
+                <line number="105" hits="1" branch="false" />
+                <line number="106" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAllAppointmentSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="111" hits="1" branch="false" />
+                <line number="113" hits="1" branch="false" />
+                <line number="116" hits="1" branch="false" />
+                <line number="117" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAllAppointmentExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="121" hits="1" branch="false" />
+                <line number="123" hits="1" branch="false" />
+                <line number="124" hits="2" branch="false" />
+                <line number="126" hits="1" branch="false" />
+                <line number="127" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAppointmentByDoctorIDSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="131" hits="1" branch="false" />
+                <line number="133" hits="1" branch="false" />
+                <line number="136" hits="1" branch="false" />
+                <line number="137" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAppointmentByDoctorIDExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="140" hits="1" branch="false" />
+                <line number="142" hits="2" branch="false" />
+                <line number="144" hits="1" branch="false" />
+                <line number="145" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAppointmentByPatientIDSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="149" hits="1" branch="false" />
+                <line number="151" hits="1" branch="false" />
+                <line number="154" hits="1" branch="false" />
+                <line number="155" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAppointmentByPatientIDExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="158" hits="1" branch="false" />
+                <line number="160" hits="2" branch="false" />
+                <line number="162" hits="1" branch="false" />
+                <line number="163" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="UpdateAppointmentSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="167" hits="1" branch="false" />
+                <line number="169" hits="1" branch="false" />
+                <line number="170" hits="1" branch="false" />
+                <line number="171" hits="1" branch="false" />
+                <line number="172" hits="1" branch="false" />
+                <line number="173" hits="1" branch="false" />
+                <line number="174" hits="1" branch="false" />
+                <line number="175" hits="1" branch="false" />
+                <line number="176" hits="1" branch="false" />
+                <line number="177" hits="1" branch="false" />
+                <line number="180" hits="1" branch="false" />
+                <line number="182" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="UpdateAppointmentExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="187" hits="1" branch="false" />
+                <line number="189" hits="1" branch="false" />
+                <line number="190" hits="1" branch="false" />
+                <line number="191" hits="1" branch="false" />
+                <line number="192" hits="1" branch="false" />
+                <line number="193" hits="1" branch="false" />
+                <line number="194" hits="1" branch="false" />
+                <line number="195" hits="1" branch="false" />
+                <line number="196" hits="1" branch="false" />
+                <line number="197" hits="2" branch="false" />
+                <line number="200" hits="1" branch="false" />
+                <line number="202" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="CancelAppointmentSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="206" hits="1" branch="false" />
+                <line number="208" hits="1" branch="false" />
+                <line number="211" hits="1" branch="false" />
+                <line number="212" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="CancelAppointmentExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="216" hits="1" branch="false" />
+                <line number="218" hits="2" branch="false" />
+                <line number="221" hits="1" branch="false" />
+                <line number="222" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="RescheduleAppointmentByIDSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="226" hits="1" branch="false" />
+                <line number="228" hits="1" branch="false" />
+                <line number="231" hits="1" branch="false" />
+                <line number="232" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="RescheduleAppointmentByIDExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="236" hits="1" branch="false" />
+                <line number="239" hits="2" branch="false" />
+                <line number="242" hits="1" branch="false" />
+                <line number="243" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="18" branch="false" />
+            <line number="20" hits="18" branch="false" />
+            <line number="21" hits="18" branch="false" />
+            <line number="22" hits="18" branch="false" />
+            <line number="23" hits="18" branch="false" />
+            <line number="24" hits="18" branch="false" />
+            <line number="25" hits="18" branch="false" />
+            <line number="26" hits="18" branch="false" />
+            <line number="27" hits="18" branch="false" />
+            <line number="28" hits="18" branch="false" />
+            <line number="29" hits="18" branch="false" />
+            <line number="30" hits="18" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="45" hits="2" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="55" hits="1" branch="false" />
+            <line number="56" hits="1" branch="false" />
+            <line number="57" hits="1" branch="false" />
+            <line number="58" hits="1" branch="false" />
+            <line number="59" hits="1" branch="false" />
+            <line number="60" hits="1" branch="false" />
+            <line number="61" hits="1" branch="false" />
+            <line number="63" hits="1" branch="false" />
+            <line number="66" hits="1" branch="false" />
+            <line number="67" hits="1" branch="false" />
+            <line number="71" hits="1" branch="false" />
+            <line number="73" hits="1" branch="false" />
+            <line number="74" hits="1" branch="false" />
+            <line number="75" hits="1" branch="false" />
+            <line number="76" hits="1" branch="false" />
+            <line number="77" hits="1" branch="false" />
+            <line number="78" hits="1" branch="false" />
+            <line number="79" hits="1" branch="false" />
+            <line number="82" hits="2" branch="false" />
+            <line number="85" hits="1" branch="false" />
+            <line number="86" hits="1" branch="false" />
+            <line number="90" hits="1" branch="false" />
+            <line number="92" hits="1" branch="false" />
+            <line number="95" hits="1" branch="false" />
+            <line number="96" hits="1" branch="false" />
+            <line number="100" hits="1" branch="false" />
+            <line number="102" hits="2" branch="false" />
+            <line number="105" hits="1" branch="false" />
+            <line number="106" hits="1" branch="false" />
+            <line number="111" hits="1" branch="false" />
+            <line number="113" hits="1" branch="false" />
+            <line number="116" hits="1" branch="false" />
+            <line number="117" hits="1" branch="false" />
+            <line number="121" hits="1" branch="false" />
+            <line number="123" hits="1" branch="false" />
+            <line number="124" hits="2" branch="false" />
+            <line number="126" hits="1" branch="false" />
+            <line number="127" hits="1" branch="false" />
+            <line number="131" hits="1" branch="false" />
+            <line number="133" hits="1" branch="false" />
+            <line number="136" hits="1" branch="false" />
+            <line number="137" hits="1" branch="false" />
+            <line number="140" hits="1" branch="false" />
+            <line number="142" hits="2" branch="false" />
+            <line number="144" hits="1" branch="false" />
+            <line number="145" hits="1" branch="false" />
+            <line number="149" hits="1" branch="false" />
+            <line number="151" hits="1" branch="false" />
+            <line number="154" hits="1" branch="false" />
+            <line number="155" hits="1" branch="false" />
+            <line number="158" hits="1" branch="false" />
+            <line number="160" hits="2" branch="false" />
+            <line number="162" hits="1" branch="false" />
+            <line number="163" hits="1" branch="false" />
+            <line number="167" hits="1" branch="false" />
+            <line number="169" hits="1" branch="false" />
+            <line number="170" hits="1" branch="false" />
+            <line number="171" hits="1" branch="false" />
+            <line number="172" hits="1" branch="false" />
+            <line number="173" hits="1" branch="false" />
+            <line number="174" hits="1" branch="false" />
+            <line number="175" hits="1" branch="false" />
+            <line number="176" hits="1" branch="false" />
+            <line number="177" hits="1" branch="false" />
+            <line number="180" hits="1" branch="false" />
+            <line number="182" hits="1" branch="false" />
+            <line number="187" hits="1" branch="false" />
+            <line number="189" hits="1" branch="false" />
+            <line number="190" hits="1" branch="false" />
+            <line number="191" hits="1" branch="false" />
+            <line number="192" hits="1" branch="false" />
+            <line number="193" hits="1" branch="false" />
+            <line number="194" hits="1" branch="false" />
+            <line number="195" hits="1" branch="false" />
+            <line number="196" hits="1" branch="false" />
+            <line number="197" hits="2" branch="false" />
+            <line number="200" hits="1" branch="false" />
+            <line number="202" hits="1" branch="false" />
+            <line number="206" hits="1" branch="false" />
+            <line number="208" hits="1" branch="false" />
+            <line number="211" hits="1" branch="false" />
+            <line number="212" hits="1" branch="false" />
+            <line number="216" hits="1" branch="false" />
+            <line number="218" hits="2" branch="false" />
+            <line number="221" hits="1" branch="false" />
+            <line number="222" hits="1" branch="false" />
+            <line number="226" hits="1" branch="false" />
+            <line number="228" hits="1" branch="false" />
+            <line number="231" hits="1" branch="false" />
+            <line number="232" hits="1" branch="false" />
+            <line number="236" hits="1" branch="false" />
+            <line number="239" hits="2" branch="false" />
+            <line number="242" hits="1" branch="false" />
+            <line number="243" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicDoctorBLUnitTest.DoctorBLTest" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicDoctorBLUnitTest\DoctorBLTest.cs" line-rate="1" branch-rate="1" complexity="20">
+          <methods>
+            <method name="Setup" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="14" hits="20" branch="false" />
+                <line number="15" hits="20" branch="false" />
+                <line number="16" hits="20" branch="false" />
+                <line number="17" hits="20" branch="false" />
+                <line number="18" hits="20" branch="false" />
+                <line number="19" hits="20" branch="false" />
+                <line number="20" hits="20" branch="false" />
+                <line number="21" hits="20" branch="false" />
+                <line number="22" hits="20" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorByNameSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="26" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+                <line number="31" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorByNameExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="1" branch="false" />
+                <line number="37" hits="2" branch="false" />
+                <line number="39" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="AddDoctorSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="45" hits="1" branch="false" />
+                <line number="47" hits="1" branch="false" />
+                <line number="48" hits="1" branch="false" />
+                <line number="49" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+                <line number="52" hits="1" branch="false" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
+                <line number="55" hits="1" branch="false" />
+                <line number="57" hits="1" branch="false" />
+                <line number="60" hits="1" branch="false" />
+                <line number="61" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="AddDoctorExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="65" hits="1" branch="false" />
+                <line number="67" hits="1" branch="false" />
+                <line number="68" hits="1" branch="false" />
+                <line number="69" hits="1" branch="false" />
+                <line number="70" hits="1" branch="false" />
+                <line number="71" hits="1" branch="false" />
+                <line number="72" hits="1" branch="false" />
+                <line number="73" hits="1" branch="false" />
+                <line number="74" hits="1" branch="false" />
+                <line number="75" hits="1" branch="false" />
+                <line number="78" hits="2" branch="false" />
+                <line number="81" hits="1" branch="false" />
+                <line number="82" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="DeleteDoctorSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="86" hits="1" branch="false" />
+                <line number="88" hits="1" branch="false" />
+                <line number="91" hits="1" branch="false" />
+                <line number="92" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="DeleteDoctorExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="96" hits="1" branch="false" />
+                <line number="98" hits="2" branch="false" />
+                <line number="100" hits="1" branch="false" />
+                <line number="101" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAllDoctorsSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="105" hits="1" branch="false" />
+                <line number="107" hits="1" branch="false" />
+                <line number="110" hits="1" branch="false" />
+                <line number="111" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAllDoctorsExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="115" hits="1" branch="false" />
+                <line number="117" hits="1" branch="false" />
+                <line number="118" hits="2" branch="false" />
+                <line number="120" hits="1" branch="false" />
+                <line number="121" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorByIDSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="125" hits="1" branch="false" />
+                <line number="127" hits="1" branch="false" />
+                <line number="130" hits="1" branch="false" />
+                <line number="131" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorByIDExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="134" hits="1" branch="false" />
+                <line number="136" hits="2" branch="false" />
+                <line number="138" hits="1" branch="false" />
+                <line number="139" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="ChangeDoctorNameSucccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="143" hits="1" branch="false" />
+                <line number="145" hits="1" branch="false" />
+                <line number="148" hits="1" branch="false" />
+                <line number="149" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="ChangeDoctorByNameExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="152" hits="1" branch="false" />
+                <line number="154" hits="2" branch="false" />
+                <line number="156" hits="1" branch="false" />
+                <line number="157" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorBySpecializationSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="161" hits="1" branch="false" />
+                <line number="163" hits="1" branch="false" />
+                <line number="166" hits="1" branch="false" />
+                <line number="167" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorBySpecializationExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="171" hits="1" branch="false" />
+                <line number="173" hits="2" branch="false" />
+                <line number="175" hits="1" branch="false" />
+                <line number="176" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorAvailalityByIDSuccessTest" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="180" hits="1" branch="false" />
+                <line number="182" hits="1" branch="false" />
+                <line number="185" hits="1" branch="false" />
+                <line number="186" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorAvailalityByIDExceptionTest" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="190" hits="2" branch="false" />
+                <line number="192" hits="4" branch="false" />
+                <line number="194" hits="2" branch="false" />
+                <line number="195" hits="2" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorAvailalityByIDFailureTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="199" hits="1" branch="false" />
+                <line number="201" hits="1" branch="false" />
+                <line number="202" hits="1" branch="false" />
+                <line number="203" hits="1" branch="false" />
+                <line number="204" hits="1" branch="false" />
+                <line number="205" hits="1" branch="false" />
+                <line number="206" hits="1" branch="false" />
+                <line number="207" hits="1" branch="false" />
+                <line number="208" hits="1" branch="false" />
+                <line number="209" hits="1" branch="false" />
+                <line number="210" hits="1" branch="false" />
+                <line number="212" hits="1" branch="false" />
+                <line number="215" hits="1" branch="false" />
+                <line number="217" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAvailableDoctorsSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="221" hits="1" branch="false" />
+                <line number="223" hits="1" branch="false" />
+                <line number="226" hits="1" branch="false" />
+                <line number="227" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAvailableDoctorsExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="230" hits="1" branch="false" />
+                <line number="232" hits="1" branch="false" />
+                <line number="233" hits="2" branch="false" />
+                <line number="235" hits="1" branch="false" />
+                <line number="236" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="14" hits="20" branch="false" />
+            <line number="15" hits="20" branch="false" />
+            <line number="16" hits="20" branch="false" />
+            <line number="17" hits="20" branch="false" />
+            <line number="18" hits="20" branch="false" />
+            <line number="19" hits="20" branch="false" />
+            <line number="20" hits="20" branch="false" />
+            <line number="21" hits="20" branch="false" />
+            <line number="22" hits="20" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="31" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="37" hits="2" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="45" hits="1" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="55" hits="1" branch="false" />
+            <line number="57" hits="1" branch="false" />
+            <line number="60" hits="1" branch="false" />
+            <line number="61" hits="1" branch="false" />
+            <line number="65" hits="1" branch="false" />
+            <line number="67" hits="1" branch="false" />
+            <line number="68" hits="1" branch="false" />
+            <line number="69" hits="1" branch="false" />
+            <line number="70" hits="1" branch="false" />
+            <line number="71" hits="1" branch="false" />
+            <line number="72" hits="1" branch="false" />
+            <line number="73" hits="1" branch="false" />
+            <line number="74" hits="1" branch="false" />
+            <line number="75" hits="1" branch="false" />
+            <line number="78" hits="2" branch="false" />
+            <line number="81" hits="1" branch="false" />
+            <line number="82" hits="1" branch="false" />
+            <line number="86" hits="1" branch="false" />
+            <line number="88" hits="1" branch="false" />
+            <line number="91" hits="1" branch="false" />
+            <line number="92" hits="1" branch="false" />
+            <line number="96" hits="1" branch="false" />
+            <line number="98" hits="2" branch="false" />
+            <line number="100" hits="1" branch="false" />
+            <line number="101" hits="1" branch="false" />
+            <line number="105" hits="1" branch="false" />
+            <line number="107" hits="1" branch="false" />
+            <line number="110" hits="1" branch="false" />
+            <line number="111" hits="1" branch="false" />
+            <line number="115" hits="1" branch="false" />
+            <line number="117" hits="1" branch="false" />
+            <line number="118" hits="2" branch="false" />
+            <line number="120" hits="1" branch="false" />
+            <line number="121" hits="1" branch="false" />
+            <line number="125" hits="1" branch="false" />
+            <line number="127" hits="1" branch="false" />
+            <line number="130" hits="1" branch="false" />
+            <line number="131" hits="1" branch="false" />
+            <line number="134" hits="1" branch="false" />
+            <line number="136" hits="2" branch="false" />
+            <line number="138" hits="1" branch="false" />
+            <line number="139" hits="1" branch="false" />
+            <line number="143" hits="1" branch="false" />
+            <line number="145" hits="1" branch="false" />
+            <line number="148" hits="1" branch="false" />
+            <line number="149" hits="1" branch="false" />
+            <line number="152" hits="1" branch="false" />
+            <line number="154" hits="2" branch="false" />
+            <line number="156" hits="1" branch="false" />
+            <line number="157" hits="1" branch="false" />
+            <line number="161" hits="1" branch="false" />
+            <line number="163" hits="1" branch="false" />
+            <line number="166" hits="1" branch="false" />
+            <line number="167" hits="1" branch="false" />
+            <line number="171" hits="1" branch="false" />
+            <line number="173" hits="2" branch="false" />
+            <line number="175" hits="1" branch="false" />
+            <line number="176" hits="1" branch="false" />
+            <line number="180" hits="1" branch="false" />
+            <line number="182" hits="1" branch="false" />
+            <line number="185" hits="1" branch="false" />
+            <line number="186" hits="1" branch="false" />
+            <line number="190" hits="2" branch="false" />
+            <line number="192" hits="4" branch="false" />
+            <line number="194" hits="2" branch="false" />
+            <line number="195" hits="2" branch="false" />
+            <line number="199" hits="1" branch="false" />
+            <line number="201" hits="1" branch="false" />
+            <line number="202" hits="1" branch="false" />
+            <line number="203" hits="1" branch="false" />
+            <line number="204" hits="1" branch="false" />
+            <line number="205" hits="1" branch="false" />
+            <line number="206" hits="1" branch="false" />
+            <line number="207" hits="1" branch="false" />
+            <line number="208" hits="1" branch="false" />
+            <line number="209" hits="1" branch="false" />
+            <line number="210" hits="1" branch="false" />
+            <line number="212" hits="1" branch="false" />
+            <line number="215" hits="1" branch="false" />
+            <line number="217" hits="1" branch="false" />
+            <line number="221" hits="1" branch="false" />
+            <line number="223" hits="1" branch="false" />
+            <line number="226" hits="1" branch="false" />
+            <line number="227" hits="1" branch="false" />
+            <line number="230" hits="1" branch="false" />
+            <line number="232" hits="1" branch="false" />
+            <line number="233" hits="2" branch="false" />
+            <line number="235" hits="1" branch="false" />
+            <line number="236" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="ClinicDoctorBLUnitTest.patientBLTest" filename="C:\Users\VC\source\repos\Day7\ClinicAppointmentSolution\ClinicDoctorBLUnitTest\PatientBLTest.cs" line-rate="1" branch-rate="1" complexity="17">
+          <methods>
+            <method name="Setup" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="19" hits="16" branch="false" />
+                <line number="20" hits="16" branch="false" />
+                <line number="21" hits="16" branch="false" />
+                <line number="22" hits="16" branch="false" />
+                <line number="23" hits="16" branch="false" />
+                <line number="24" hits="16" branch="false" />
+                <line number="25" hits="16" branch="false" />
+                <line number="26" hits="16" branch="false" />
+                <line number="27" hits="16" branch="false" />
+                <line number="28" hits="16" branch="false" />
+                <line number="29" hits="16" branch="false" />
+                <line number="30" hits="16" branch="false" />
+              </lines>
+            </method>
+            <method name="GetPatientByNameSuccesTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="34" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="39" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorByNameExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="43" hits="1" branch="false" />
+                <line number="45" hits="2" branch="false" />
+                <line number="47" hits="1" branch="false" />
+                <line number="48" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="AddPatientSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="53" hits="1" branch="false" />
+                <line number="55" hits="1" branch="false" />
+                <line number="56" hits="1" branch="false" />
+                <line number="57" hits="1" branch="false" />
+                <line number="58" hits="1" branch="false" />
+                <line number="59" hits="1" branch="false" />
+                <line number="60" hits="1" branch="false" />
+                <line number="61" hits="1" branch="false" />
+                <line number="62" hits="1" branch="false" />
+                <line number="64" hits="1" branch="false" />
+                <line number="67" hits="1" branch="false" />
+                <line number="68" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="AddPatientExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="72" hits="1" branch="false" />
+                <line number="74" hits="1" branch="false" />
+                <line number="75" hits="1" branch="false" />
+                <line number="76" hits="1" branch="false" />
+                <line number="77" hits="1" branch="false" />
+                <line number="78" hits="1" branch="false" />
+                <line number="79" hits="1" branch="false" />
+                <line number="80" hits="1" branch="false" />
+                <line number="81" hits="1" branch="false" />
+                <line number="84" hits="2" branch="false" />
+                <line number="87" hits="1" branch="false" />
+                <line number="88" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="DeletePatientSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="92" hits="1" branch="false" />
+                <line number="94" hits="1" branch="false" />
+                <line number="97" hits="1" branch="false" />
+                <line number="98" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="DeletePatientExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="102" hits="1" branch="false" />
+                <line number="104" hits="2" branch="false" />
+                <line number="106" hits="1" branch="false" />
+                <line number="107" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAllPatientSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="111" hits="1" branch="false" />
+                <line number="113" hits="1" branch="false" />
+                <line number="116" hits="1" branch="false" />
+                <line number="117" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetAllPatientExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="121" hits="1" branch="false" />
+                <line number="123" hits="1" branch="false" />
+                <line number="124" hits="2" branch="false" />
+                <line number="126" hits="1" branch="false" />
+                <line number="127" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetPatientByIDSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="131" hits="1" branch="false" />
+                <line number="133" hits="1" branch="false" />
+                <line number="136" hits="1" branch="false" />
+                <line number="137" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetPatientByIDExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="140" hits="1" branch="false" />
+                <line number="142" hits="2" branch="false" />
+                <line number="144" hits="1" branch="false" />
+                <line number="145" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="ChangePatientNameSucccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="149" hits="1" branch="false" />
+                <line number="151" hits="1" branch="false" />
+                <line number="154" hits="1" branch="false" />
+                <line number="155" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="ChangePatientNameExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="158" hits="1" branch="false" />
+                <line number="160" hits="2" branch="false" />
+                <line number="162" hits="1" branch="false" />
+                <line number="163" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetPatientByPurposeSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="167" hits="1" branch="false" />
+                <line number="169" hits="1" branch="false" />
+                <line number="172" hits="1" branch="false" />
+                <line number="173" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetDoctorBySpecializationExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="177" hits="1" branch="false" />
+                <line number="179" hits="2" branch="false" />
+                <line number="181" hits="1" branch="false" />
+                <line number="182" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetPatientByAdmitDateSuccessTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="186" hits="1" branch="false" />
+                <line number="188" hits="1" branch="false" />
+                <line number="191" hits="1" branch="false" />
+                <line number="192" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="GetPatientByAdmitDateSuccessTestExceptionTest" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="196" hits="1" branch="false" />
+                <line number="198" hits="2" branch="false" />
+                <line number="200" hits="1" branch="false" />
+                <line number="201" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="19" hits="16" branch="false" />
+            <line number="20" hits="16" branch="false" />
+            <line number="21" hits="16" branch="false" />
+            <line number="22" hits="16" branch="false" />
+            <line number="23" hits="16" branch="false" />
+            <line number="24" hits="16" branch="false" />
+            <line number="25" hits="16" branch="false" />
+            <line number="26" hits="16" branch="false" />
+            <line number="27" hits="16" branch="false" />
+            <line number="28" hits="16" branch="false" />
+            <line number="29" hits="16" branch="false" />
+            <line number="30" hits="16" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="39" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="45" hits="2" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="55" hits="1" branch="false" />
+            <line number="56" hits="1" branch="false" />
+            <line number="57" hits="1" branch="false" />
+            <line number="58" hits="1" branch="false" />
+            <line number="59" hits="1" branch="false" />
+            <line number="60" hits="1" branch="false" />
+            <line number="61" hits="1" branch="false" />
+            <line number="62" hits="1" branch="false" />
+            <line number="64" hits="1" branch="false" />
+            <line number="67" hits="1" branch="false" />
+            <line number="68" hits="1" branch="false" />
+            <line number="72" hits="1" branch="false" />
+            <line number="74" hits="1" branch="false" />
+            <line number="75" hits="1" branch="false" />
+            <line number="76" hits="1" branch="false" />
+            <line number="77" hits="1" branch="false" />
+            <line number="78" hits="1" branch="false" />
+            <line number="79" hits="1" branch="false" />
+            <line number="80" hits="1" branch="false" />
+            <line number="81" hits="1" branch="false" />
+            <line number="84" hits="2" branch="false" />
+            <line number="87" hits="1" branch="false" />
+            <line number="88" hits="1" branch="false" />
+            <line number="92" hits="1" branch="false" />
+            <line number="94" hits="1" branch="false" />
+            <line number="97" hits="1" branch="false" />
+            <line number="98" hits="1" branch="false" />
+            <line number="102" hits="1" branch="false" />
+            <line number="104" hits="2" branch="false" />
+            <line number="106" hits="1" branch="false" />
+            <line number="107" hits="1" branch="false" />
+            <line number="111" hits="1" branch="false" />
+            <line number="113" hits="1" branch="false" />
+            <line number="116" hits="1" branch="false" />
+            <line number="117" hits="1" branch="false" />
+            <line number="121" hits="1" branch="false" />
+            <line number="123" hits="1" branch="false" />
+            <line number="124" hits="2" branch="false" />
+            <line number="126" hits="1" branch="false" />
+            <line number="127" hits="1" branch="false" />
+            <line number="131" hits="1" branch="false" />
+            <line number="133" hits="1" branch="false" />
+            <line number="136" hits="1" branch="false" />
+            <line number="137" hits="1" branch="false" />
+            <line number="140" hits="1" branch="false" />
+            <line number="142" hits="2" branch="false" />
+            <line number="144" hits="1" branch="false" />
+            <line number="145" hits="1" branch="false" />
+            <line number="149" hits="1" branch="false" />
+            <line number="151" hits="1" branch="false" />
+            <line number="154" hits="1" branch="false" />
+            <line number="155" hits="1" branch="false" />
+            <line number="158" hits="1" branch="false" />
+            <line number="160" hits="2" branch="false" />
+            <line number="162" hits="1" branch="false" />
+            <line number="163" hits="1" branch="false" />
+            <line number="167" hits="1" branch="false" />
+            <line number="169" hits="1" branch="false" />
+            <line number="172" hits="1" branch="false" />
+            <line number="173" hits="1" branch="false" />
+            <line number="177" hits="1" branch="false" />
+            <line number="179" hits="2" branch="false" />
+            <line number="181" hits="1" branch="false" />
+            <line number="182" hits="1" branch="false" />
+            <line number="186" hits="1" branch="false" />
+            <line number="188" hits="1" branch="false" />
+            <line number="191" hits="1" branch="false" />
+            <line number="192" hits="1" branch="false" />
+            <line number="196" hits="1" branch="false" />
+            <line number="198" hits="2" branch="false" />
+            <line number="200" hits="1" branch="false" />
+            <line number="201" hits="1" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>

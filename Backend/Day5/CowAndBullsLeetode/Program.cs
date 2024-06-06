@@ -1,0 +1,40 @@
+﻿using System;
+class CowAndBulls
+{
+    private static void Main(String[] args)
+    {
+        Console.WriteLine("Please Enter the Secret Number");
+        string secret = Console.ReadLine();
+        Console.WriteLine("Please Enter the Guess Number");
+        string guess = Console.ReadLine();
+        char[] SecretArray = secret.ToCharArray();
+        char[] GuessArray = guess.ToCharArray();
+
+        int[] SecretDigitsCount = new int[10];
+        int[] GuessDigitCount = new int[10];
+
+        int bulls = 0;
+        int cows = 0;
+
+        for (int iterator = 0; iterator < secret.Length; iterator++)
+        {
+            if (SecretArray[iterator] == GuessArray[iterator])
+            {
+                bulls++;
+            }
+            else
+            {
+                SecretDigitsCount[SecretArray[iterator] - '0']++;
+                GuessDigitCount[GuessArray[iterator] - '0']++;
+            }
+        }
+
+        for (int iterator = 0; iterator < 10; iterator++)
+        {
+            cows += Math.Min(SecretDigitsCount[iterator], GuessDigitCount[iterator]);
+        }
+
+        Console.WriteLine("Cows - " + cows);
+        Console.WriteLine("Bulls - " + bulls);
+    }
+}
