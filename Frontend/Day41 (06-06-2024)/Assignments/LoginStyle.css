@@ -1,0 +1,93 @@
+.login-container {
+    background-image: url('./Assets/Images/BG.png');
+    background-color: #2148C0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.transparent-card {
+  background-color: #2148C0;
+  border: none;
+  background: transparent;
+  width: 300px; 
+}
+
+.login_image{
+    height: 97.85px;
+    width: 119.39px;
+}
+
+.user_name_rectangle,
+.password_rectangle{
+    border: 1px solid white;
+    border-radius: 4px;
+    background: #2148C0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.user_name_rectangle input,
+.password_rectangle input,
+.user_name_rectangle input::placeholder,
+.password_rectangle input::placeholder {
+    color: #FFFFFF !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+}
+.user_name_rectangle .form-control,
+.password_rectangle .form-control {
+    background-color: transparent;
+}
+
+.input-group-text {
+    background: transparent; 
+    color: white;
+    border: none;
+}
+.fa-lock {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.btn-custom {
+    border: 1px solid white;
+    border-radius: 4px;
+    background: #FFFFFF;
+    color: #2148C0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+}
+
+.btn-custom:hover{
+    background: whitesmoke;
+}
+
+.forgot-password {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+@media (max-width : 800px){
+    .login_image{
+        width: auto;
+        height: auto;
+    }
+}
