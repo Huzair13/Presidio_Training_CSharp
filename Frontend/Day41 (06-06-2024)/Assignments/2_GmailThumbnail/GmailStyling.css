@@ -81,8 +81,9 @@ body, html {
     .content {
         width: auto;
         height: auto;
-        top: 25px;
-        left: 35px;
+        right: 30px;
+        top: 100px;
+        left: 45px;
         line-height: 50px;
         font-size: 30px;
     }
