@@ -14,7 +14,7 @@ div{
 }
 
 section.normal{
-    @include general-home(green,white,normal);
+    @include general-home(Aqua,black,normal);
 }
 section.error{
     @include general-home(green,white,error);

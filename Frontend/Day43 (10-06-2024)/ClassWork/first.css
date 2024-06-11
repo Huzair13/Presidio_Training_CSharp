@@ -1,19 +1,19 @@
 div {
   background-color: black;
   color: white;
-  border: yellow 2px solid;
+  border: green 2px solid;
 }
 
 section.normal {
-  background-color: green;
-  color: white;
-  border: yellow 2px solid;
+  background-color: Aqua;
+  color: black;
+  border: green 2px solid;
 }
 
 section.error {
   background-color: green;
   color: red;
-  border: yellow 2px solid;
+  border: green 2px solid;
 }
 
 .danger {
@@ -72,6 +72,4 @@ nav li {
 }
 nav a {
   text-decoration: none;
-}
-
-/*# sourceMappingURL=first.css.map */
+}/*# sourceMappingURL=first.css.map */
