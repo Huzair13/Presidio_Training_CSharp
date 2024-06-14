@@ -12,6 +12,16 @@ window.addEventListener('scroll', function() {
     }
 });
 
+//OPEN LOGIN PAGE
+var openLoginPage = () =>{
+  window.location.href = "Login.html"
+}
+
+//OPEN REGISTER PAGE
+var openRegisterPage = () =>{
+  window.location.href = "RegisterOption.html"
+}
+
 //INITIALIZE LANDING CAROUSEL
 document.addEventListener("DOMContentLoaded", function () {
   var landingCarousel = document.querySelector("#LandingCarousel");
