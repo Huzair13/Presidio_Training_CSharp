@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .error-text {
+      color: #ef4444;
+    }
+
+    .validBorder{
+        border: 1px solid green;
+    }
+    .invalidBorder{
+        border: 1px solid red;
+    }
+  </style>
+</head>
+<body class="bg-green-100 p-6">
+  <div class="max-w-xl mx-auto bg-white p-8 rounded-md shadow-lg">
+    <h2 class="text-3xl font-bold mb-6 text-center p-3 bg-green-500 text-white">Registration Form</h2>
+    <form id="registrationForm" class="space-y-6">
+      <div>
+        <input type="text" id="name" name="name" class="input-field w-full px-4 py-2 rounded-lg border-gray-300" placeholder="Name" onblur="validateForm()">
+        <p id="nameError" class="error-text"></p>
+      </div>
+      <div>
+        <input type="tel" id="phone" name="phone" class="input-field w-full px-4 py-2 rounded-lg border-gray-300" placeholder="Phone">
+        <p id="phoneError" class="error-text"></p>
+      </div>
+      <div id="dobDiv">
+        <input type="date" id="dob" name="dob" class="input-field w-full px-4 py-2 rounded-lg border-gray-300" placeholder="Date of Birth (YYYY-MM-DD)">
+        <p id="dobError" class="error-text"></p>
+      </div>
+      <div>
+        <input type="email" id="email" name="email" class="input-field w-full px-4 py-2 rounded-lg border-gray-300" placeholder="Email">
+        <p id="emailError" class="error-text"></p>
+      </div>
+
+      <div class="w-full px-4 py-2 rounded-lg border-gray-300" id="genderInputDiv" onblur="validateForm()">
+        <label for="gender" class="block mb-2">Gender</label>
+        <div class="flex flex-wrap gap-2">
+          <input type="radio" id="male" name="gender" value="Male" class="mr-1" onblur="validateForm()">
+          <label for="male" class="mr-4">Male</label>
+          <input type="radio" id="female" name="gender" value="Female" class="mr-1" onblur="validateForm()">
+          <label for="female">Female</label>
+        </div>
+        <p id="genderError" class="error-text"></p>
+      </div>
+      
+      <div class="w-full px-4 py-2 rounded-lg border-gray-300" id="QualificationDiv">
+        <label for="qualification" class="block mb-2">Qualification</label>
+        <div class="flex flex-wrap gap-2">
+          <input type="checkbox" id="qualification1" name="qualification" value="Graduate">
+          <label for="qualification1">Graduate</label>
+          <input type="checkbox" id="qualification2" name="qualification" value="Post Graduate">
+          <label for="qualification2">Post Graduate</label>
+          <input type="checkbox" id="qualification3" name="qualification" value="Doctorate">
+          <label for="qualification3">Doctorate</label>
+        </div>
+        <p id="qualificationError" class="error-text"></p>
+      </div>
+      
+      <div class="w-full px-4 py-2 rounded-lg border-gray-300">
+        <label for="profession" class="block mb-2">Profession</label>
+        <input list="professions" id="profession" name="profession" class="input-field w-full px-4 py-2 rounded-lg border-gray-300" placeholder="Select or type your profession">
+        <datalist id="professions"></datalist>
+        <p id="professionError" class="error-text"></p>
+      </div>
+      
+    
+      <button type="submit" class="w-full bg-green-500 hover:bg-green-900 text-white py-2 px-4 rounded mt-6">Submit</button>
+      <div id="formErrors" class="mt-2 text-red-500"></div>
+    </form>
+  </div>
+
+  <script src="Register.js"></script>
+</body>
+</html>
