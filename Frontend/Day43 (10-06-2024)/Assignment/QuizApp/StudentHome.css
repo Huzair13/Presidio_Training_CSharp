@@ -30,12 +30,8 @@ nav{
 .navbar-scrolled {
     background: #ECECEC;
 }
-.navbar-scrolled-start button{
-    background-color: #46aaed;
-    color: #ECECEC;
-}
-.navbar-scrolled-start input{
-    background-color: #46aaed;
+.custom-icon-color{
+    color: black;
 }
 
 .navbar-scrolled-start input::placeholder{
@@ -56,6 +52,44 @@ nav{
 
 .navbar-scrolled-start #startQuizNumber:hover{
     background-color: #46aaed;
+}
+
+
+.card {
+    margin: 2em 0.6em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+  }
+
+.navbar .fa-user-circle {
+    font-size: 1.5rem; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.studentProfile{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center;
+    }
+    .navbar .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+    .navbar .me-3 {
+        font-size: 0.875rem; 
+        margin-bottom: 0; 
+    }
+    .studentProfile{
+        background: #ECECEC;
+        color: #276792;
+        padding: 5px;
+    }
 }
 
 
@@ -80,5 +114,17 @@ nav{
         transform: scale(1.03);
         background: #0574D1;
         color: white;
+    }
+    .studentProfile{
+        background: #ECECEC;
+        color: #276792;
+        padding: 5px;
+    }
+}
+
+@media (max-width : 200px){
+    .navbar .navbar-nav {
+        flex-direction: column;
+        align-items: center;
     }
 }
