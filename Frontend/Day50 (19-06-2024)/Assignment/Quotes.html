@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes - Quotes Project</title>
+    <link rel="icon" href="https://dummyjson.com/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: lightgray;
+        }
+        .quote-card {
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgb(255, 255, 175);
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .quote-card:hover {
+            background-color: rgb(255, 255, 130);
+            transform: scale(1.03);
+        }
+
+        .quote-text {
+            font-size: 1.2em;
+            font-style: italic;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .quote-author {
+            text-align: right;
+            font-size: 1em;
+            margin-top: 10px;
+            color: red;
+        }
+
+        .custom-navbar {
+            background-color: black;
+        }
+
+        .custom-navbar .navbar-brand,
+        .custom-navbar .nav-link,
+        .custom-navbar .navbar-toggler {
+            color: yellow !important;
+        }
+
+        .custom-navbar .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='yellow' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .pagination .page-link {
+            background-color: #343a40;
+            color: #ffc107;
+        }
+
+        .pagination .page-link:hover {
+            background-color: #ffc107;
+            color: #343a40;
+        }
+
+        .pagination .page-item.active .page-link {
+            background-color: #ffc107;
+            color: #343a40;
+            border-color: #ffc107;
+        }
+
+        .input-group-sm .form-control,
+        .input-group-sm .btn {
+            height: auto;
+        }
+
+        .filter-icon {
+            font-size: 1.5em;
+            margin-left: 10px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        .dropdown-menu {
+            min-width: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg custom-navbar p-3">
+        <a class="navbar-brand" href="#">Quotes Project</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quotes.html">Quotes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container mt-5">
+        <div class="input-group input-group-sm mb-3">
+            <input type="text" class="form-control" id="search-query" placeholder="Search for quotes">
+            <button class="btn btn-primary" type="button" id="search-button">Search</button>
+            <div class="dropdown">
+                <i class="bi bi-filter filter-icon" id="filter-icon" data-bs-toggle="dropdown"></i>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" id="sort-az"> AuthorName <span><i class="bi bi-arrow-up"></i></span></a></li>
+                    <li><a class="dropdown-item" href="#" id="sort-za"> AuthorName <span><i class="bi bi-arrow-down"></i></span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="quotes-container"></div>
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center" id="pagination">
+            <li class="page-item disabled" id="prev-page">
+                <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item" id="next-page">
+                <a class="page-link" href="#">Next</a>
+            </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const quotesContainer = document.getElementById('quotes-container');
+        const prevPageBtn = document.getElementById('prev-page');
+        const nextPageBtn = document.getElementById('next-page');
+        const pagination = document.getElementById('pagination');
+        const searchQueryInput = document.getElementById('search-query');
+        const searchButton = document.getElementById('search-button');
+        const sortAZBtn = document.getElementById('sort-az');
+        const sortZABtn = document.getElementById('sort-za');
+        let currentPage = 1;
+        let totalPages = 1;
+        const quotesPerPage = 5;
+        let allQuotes = [];
+        let filteredQuotes = [];
+
+        function fetchAllQuotes() {
+            fetch('https://dummyjson.com/quotes')
+            .then(response => response.json())
+            .then(data => {
+                allQuotes = data.quotes;
+                filteredQuotes = allQuotes;
+                totalPages = Math.ceil(filteredQuotes.length / quotesPerPage);
+                renderPagination();
+                fetchQuotes(currentPage);
+            })
+            .catch(error => console.error('Error fetching quotes:', error));
+        }
+
+        function fetchQuotes(page) {
+            quotesContainer.innerHTML = '';
+            const start = (page - 1) * quotesPerPage;
+            const end = start + quotesPerPage;
+            const quotesToDisplay = filteredQuotes.slice(start, end);
+
+            if (quotesToDisplay.length > 0) {
+            quotesToDisplay.forEach(quote => {
+                const quoteCard = document.createElement('div');
+                quoteCard.classList.add('quote-card');
+                quoteCard.innerHTML = `
+                <div class="quote-text">"${quote.quote}"</div>
+                <div class="quote-author">- ${quote.author}</div>
+                `;
+                quotesContainer.appendChild(quoteCard);
+            });
+            } else {
+            quotesContainer.innerHTML = '<p>No quotes found.</p>';
+            }
+        }
+
+        function updatePagination() {
+        const pageItems = document.querySelectorAll('.page-item');
+        pageItems.forEach(item => item.classList.remove('active'));
+        const currentPageItem = document.getElementById(`page-${currentPage}`);
+        if (currentPageItem) {
+            currentPageItem.classList.add('active');
+        }
+
+        prevPageBtn.classList.toggle('disabled', currentPage === 1);
+        nextPageBtn.classList.toggle('disabled', currentPage === totalPages);
+        }
+
+        function renderPagination() {
+            while (pagination.children.length > 2) {
+            pagination.removeChild(pagination.children[1]);
+            }
+
+            const startPage = Math.max(1, currentPage - 1);
+            const endPage = Math.min(totalPages, currentPage + 1);
+
+            for (let i = startPage; i <= endPage; i++) {
+            const pageItem = document.createElement('li');
+            pageItem.classList.add('page-item');
+            if (i === currentPage) {
+                pageItem.classList.add('active');
+            }
+            pageItem.id = `page-${i}`;
+            const pageLink = document.createElement('a');
+            pageLink.classList.add('page-link');
+            pageLink.href = '#';
+            pageLink.textContent = i;
+            pageItem.appendChild(pageLink);
+            pagination.insertBefore(pageItem, nextPageBtn);
+            }
+
+            const pageItems = document.querySelectorAll('.page-item');
+            pageItems.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                const page = parseInt(e.target.textContent);
+                if (!isNaN(page)) {
+                currentPage = page;
+                fetchQuotes(currentPage);
+                renderPagination();
+                updatePagination();
+                }
+            });
+            });
+
+            updatePagination();
+        }
+
+        function filterQuotes(query) {
+            if (query) {
+            filteredQuotes = allQuotes.filter(quote => quote.author.toLowerCase().includes(query.toLowerCase()));
+            } else {
+            filteredQuotes = allQuotes;
+            }
+            totalPages = Math.ceil(filteredQuotes.length / quotesPerPage);
+            currentPage = 1;
+            renderPagination();
+            fetchQuotes(currentPage);
+        }
+
+        function sortQuotes(order) {
+            if (order === 'az') {
+            filteredQuotes.sort((a, b) => {
+                const authorA = a.author.toLowerCase();
+                const authorB = b.author.toLowerCase();
+                if (authorA < authorB) return -1;
+                if (authorA > authorB) return 1;
+                return 0;
+            });
+            } else if (order === 'za') {
+            filteredQuotes.sort((a, b) => {
+                const authorA = a.author.toLowerCase();
+                const authorB = b.author.toLowerCase();
+                if (authorA > authorB) return -1;
+                if (authorA < authorB) return 1;
+                return 0;
+            });
+            }
+            currentPage = 1;
+            renderPagination();
+            fetchQuotes(currentPage);
+        }
+
+        prevPageBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (currentPage > 1) {
+            currentPage--;
+            fetchQuotes(currentPage);
+            renderPagination();
+            updatePagination();
+            }
+        });
+
+        nextPageBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (currentPage < totalPages) {
+            currentPage++;
+            fetchQuotes(currentPage);
+            renderPagination();
+            updatePagination();
+            }
+        });
+
+        searchButton.addEventListener('click', () => {
+            const query = searchQueryInput.value.trim();
+            filterQuotes(query);
+        });
+
+        sortAZBtn.addEventListener('click', () => {
+            sortQuotes('az');
+        });
+
+        sortZABtn.addEventListener('click', () => {
+            sortQuotes('za');
+        });
+
+        fetchAllQuotes();
+    </script>
+    </body>
+</html>
