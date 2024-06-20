@@ -1,9 +1,61 @@
 body{
-    color: #6F8BA4;
-    margin-top:20px;
+    color: black;
+    background: #90CCF4;
+}
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+} 
+
+.navbar .fa-user-circle {
+  font-size: 1.5rem; 
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 350px; 
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-nav {
+      flex-direction: row; 
+      justify-content: center; 
+      align-items: center;
+  }
+  .navbar .navbar-nav .nav-link {
+      padding: 0.5rem 0;
+      text-align: center;
+  }
+  .navbar .me-3 {
+      font-size: 0.875rem; 
+      margin-bottom: 0; 
+  }
+  .studentProfile{
+      background: #ECECEC;
+      color: #276792;
+      padding: 5px;
+  }
+}
+
+@media (max-width : 200px){
+  .navbar .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+nav{
+  background: #ECECEC;
 }
 .section {
-    padding: 100px 0;
+  margin-top: 30px;
+    padding: 20px 0;
     position: relative;
 }
 .gray-bg {
@@ -16,8 +68,11 @@ img {
     vertical-align: middle;
     border-style: none;
 }
-/* About Me 
----------------------*/
+
+
+
+
+
 .about-text h3 {
   font-size: 45px;
   font-weight: 700;
@@ -41,10 +96,6 @@ img {
   font-size: 18px;
   max-width: 450px;
 }
-.about-text p mark {
-  font-weight: 600;
-  color: #20247b;
-}
 
 .about-list {
   padding-top: 10px;
@@ -53,7 +104,7 @@ img {
   padding: 5px 0;
 }
 .about-list label {
-  color: #20247b;
+  color: black;
   font-weight: 600;
   width: 88px;
   margin: 0;
@@ -67,7 +118,7 @@ img {
   right: 11px;
   width: 1px;
   height: 12px;
-  background: #20247b;
+  background: black;
   -moz-transform: rotate(15deg);
   -o-transform: rotate(15deg);
   -ms-transform: rotate(15deg);
@@ -88,9 +139,12 @@ img {
 }
 
 .about-section .counter {
-  padding: 22px 20px;
-  background: #ffffff;
+  font-family: 'Playfair Display', serif; 
+  padding: 10px 20px;
+  background: #ecd788;
   border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
 }
 .about-section .counter .count-data {
@@ -99,25 +153,16 @@ img {
 }
 .about-section .counter .count {
   font-weight: 700;
-  color: #20247b;
+  color: black;
   margin: 0 0 5px;
 }
 .about-section .counter p {
   font-weight: 600;
   margin: 0;
 }
-mark {
-    background-image: linear-gradient(rgba(252, 83, 86, 0.6), rgba(252, 83, 86, 0.6));
-    background-size: 100% 3px;
-    background-repeat: no-repeat;
-    background-position: 0 bottom;
-    background-color: transparent;
-    padding: 0;
-    color: currentColor;
-}
 .theme-color {
     color: #fc5356;
 }
 .dark-color {
-    color: #20247b;
+    color: black;
 }
