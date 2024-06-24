@@ -14,7 +14,7 @@ window.addEventListener('scroll', function() {
 
 //OPEN LOGIN PAGE
 var openLoginPage = () =>{
-  window.location.href = "Login.html"
+  window.location.href = "/Login/Login.html"
 }
 
 //OPEN REGISTER PAGE
