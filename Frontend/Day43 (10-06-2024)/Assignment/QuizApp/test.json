@@ -1,0 +1,19 @@
+[
+    {
+      "title": "Question 1: Fill in the blank",
+      "type": "fill-in-the-blank",
+      "text": "Complete the sentence: 'HTML stands for HyperText Markup ____.'"
+    },
+    {
+      "title": "Question 2: MCQ",
+      "type": "mcq",
+      "text": "Which of the following is not a programming language?",
+      "options": [
+        {"value": "option1", "label": "HTML"},
+        {"value": "option2", "label": "Java"},
+        {"value": "option3", "label": "Python"},
+        {"value": "option4", "label": "Potato"}
+      ]
+    }
+  ]
+  

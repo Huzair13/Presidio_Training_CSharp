@@ -45,14 +45,14 @@
                 console.log(data);
                 localStorage.setItem('token', data.token);
 
-                const token = localStorage.getItem('token');
-                const decodedToken = parseJwt(token);
-                const userRole = decodedToken['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
+                // const token = localStorage.getItem('token');
+                // const decodedToken = parseJwt(token);
+                // const userRole = decodedToken['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
 
-                console.log(token);
-                console.log(decodedToken);
-                console.log(userRole);
-                window.location.href = '/LoggedInHome/StudentHome.html'
+                // console.log(token);
+                // console.log(decodedToken);
+                // console.log(userRole);
+                // window.location.href = '/LoggedInHome/StudentHome.html'
             })
             .catch(error => {
                 console.error('Error:', error);
