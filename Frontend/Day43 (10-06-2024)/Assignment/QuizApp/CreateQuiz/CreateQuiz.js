@@ -1,13 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
     const QuizNameInput = document.getElementById('quizName');
     const QuizDescriptionInput = document.getElementById('quizDescription');
+    const searchQueryInput = document.getElementById('search-query');
+    const searchButton = document.getElementById('search-button');
+    const sortAZBtn = document.getElementById('sort-az');
+    const sortZABtn = document.getElementById('sort-za');
+
+    const questionCategoryInput = document.getElementById('questionCategory');
+    const questionTypeInput = document.getElementById('questionType');
+    const difficultyLevelInput = document.getElementById('difficultyLevel');
+    const filterButton = document.getElementById('filter-button');
+
     let currentPage = 1;
     const perPage = 8; 
     let totalQuestions = 0; 
     const token = localStorage.getItem('token');
     let questions = [];
     let selectedQuestions = []; 
-    
+    let filteredQuestions = [];
+
     //INITIAL FETCH 
     fetchQuestions();
 
@@ -21,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 event.preventDefault(); 
                 event.stopPropagation();
             }
+            else if (QuizDescriptionInput.value === '') {
+                validateInput(QuizDescriptionInput);
+            }  
             else if (selectedQuestions.length === 0) {
                 alert('Please select at least one question.');
                 return;
@@ -41,10 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
             validateInput(input);
         });
     });
+     
 
-    if(QuizDescriptionInput.addEventListener.value===''){
-        validateInput(QuizDescriptionInput);
-    }       
 
     //VALIDATE THE INPUT
     function validateInput(input) {
@@ -57,7 +69,98 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    //FECTH QUESTION
+    //SEARCH QUESTION FUNCTIONALITY
+    function SortQuestions(query) {
+        console.log(query);
+        if (query) {
+            console.log("if reached");
+            filteredQuestions = questions.filter(question => question.questionText.toLowerCase().includes(query.toLowerCase()));
+            console.log(filteredQuestions);
+        } else {
+            filteredQuestions = questions;
+        }
+        totalPages = Math.ceil(filteredQuestions.length / perPage);
+        currentPage = 1;
+        renderPagination(filteredQuestions, filteredQuestions.length, perPage, currentPage);
+        renderQuestions(filteredQuestions.slice(0, perPage));
+    }
+
+    //SEARCH BUTTON
+    searchButton.addEventListener('click', () => {
+        console.log(questions);
+        const query = searchQueryInput.value.trim();
+        SortQuestions(query);
+    });
+
+    //SORT FUNCTIONALITY
+    function sortQuestions(order) {
+        if (filteredQuestions.length === 0) {
+            filteredQuestions = questions;
+        }
+        if (order === 'az') {
+            filteredQuestions.sort((a, b) => {
+                const QuestionA = a.questionText.toLowerCase();
+                const QuestionB = b.questionText.toLowerCase();
+                return QuestionA.localeCompare(QuestionB);
+            });
+        } else if (order === 'za') {
+            filteredQuestions.sort((a, b) => {
+                const QuestionA = a.questionText.toLowerCase();
+                const QuestionB = b.questionText.toLowerCase();
+                return QuestionB.localeCompare(QuestionA);
+            });
+        }
+        currentPage = 1;
+        renderPagination(filteredQuestions, filteredQuestions.length, perPage, currentPage);
+        renderQuestions(filteredQuestions.slice(0, perPage));
+    }
+
+    //SORT BUTTONS
+    sortAZBtn.addEventListener('click', () => {
+        sortQuestions('az');
+    });
+
+    sortZABtn.addEventListener('click', () => {
+        sortQuestions('za');
+    });
+
+// FILTER FUNCTIONALITY
+function filterQuestions(category, type, difficulty) {
+    console.log("Filter Criteria:", category, type, difficulty);
+    filteredQuestions = questions.filter(question => {
+        console.log("Question Data:", question.category, question.questionType, question.difficultyLevel);
+        const difficultyLevelInt = {
+            "Easy": 0,
+            "Medium": 1,
+            "Hard": 2
+        }[difficulty];
+
+        return (category === "" || question.category === category) &&
+               (type === "" || question.questionType === type) &&
+               (difficulty === "" || question.difficultyLevel === difficultyLevelInt);
+    });
+
+    console.log("Filtered Questions:", filteredQuestions); 
+    totalPages = Math.ceil(filteredQuestions.length / perPage);
+    currentPage = 1;
+    renderPagination(filteredQuestions, filteredQuestions.length, perPage, currentPage);
+    renderQuestions(filteredQuestions.slice(0, perPage));
+}
+
+    
+    
+    
+
+    //FILTER BUTTONS
+    filterButton.addEventListener('click', () => {
+        const category = questionCategoryInput.value;
+        const type = questionTypeInput.value;
+        const difficulty = difficultyLevelInput.value;
+        filterQuestions(category, type, difficulty);
+    });
+
+
+    //FETCH QUESTIONS
     function fetchQuestions() {
         const apiUrl = `http://localhost:5273/api/ViewQuestion/GetAllQuestions`;
     
@@ -76,8 +179,9 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             questions = data;
             totalQuestions = data.total;
-            renderQuestions(questions.slice(0,8));
-            renderPagination(data.length, perPage, currentPage);
+            filteredQuestions = questions; 
+            renderQuestions(questions.slice(0, perPage));
+            renderPagination(questions, questions.length, perPage, currentPage);
         })
         .catch(error => {
             console.error('Error fetching questions:', error);
@@ -96,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
         questions.forEach(question => {
             const questionCard = document.createElement('div');
             questionCard.className = 'question-card';
-            const isChecked = selectedQuestions.includes(question.id); // Check if question is selected
+            const isChecked = selectedQuestions.includes(question.id); 
             questionCard.innerHTML = `
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="question${question.id}" value="${question.id}" ${isChecked ? 'checked' : ''} onchange="updateSelectedQuestions(${question.id}, this.checked)">
@@ -108,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     //RENDER PAGINATION
-    const renderPagination = (totalQuizzes, quizzesPerPage, currentPage) => {
+    const renderPagination = (PaginationQuestions, totalQuizzes, quizzesPerPage, currentPage) => {
         const paginationContainer = document.querySelector('.pagination');
         paginationContainer.innerHTML = '';
         const pageCount = Math.ceil(totalQuizzes / quizzesPerPage);
@@ -144,8 +248,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 currentPage = page;
                 const start = (page - 1) * quizzesPerPage;
                 const end = start + quizzesPerPage;
-                renderQuestions(questions.slice(start,end));
-                renderPagination(totalQuizzes, quizzesPerPage, currentPage);
+                renderQuestions(PaginationQuestions.slice(start, end));
+                renderPagination(PaginationQuestions, totalQuizzes, quizzesPerPage, currentPage);
             });
         });
     };
@@ -190,9 +294,9 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             console.log('Quiz created successfully:', data);
             document.getElementById('quizForm').reset(); 
-            selectedQuestions = []; // Clear the selectedQuestions array
-            renderQuestions(questions.slice(0, perPage)); // Render first page of questions
-            renderPagination(totalQuestions, perPage, currentPage); // Reset pagination if needed
+            selectedQuestions = []; 
+            renderQuestions(questions.slice(0, perPage)); 
+            renderPagination(questions, totalQuestions, perPage, currentPage);
         })
         .catch(error => {
             console.error('Error creating quiz:', error);
