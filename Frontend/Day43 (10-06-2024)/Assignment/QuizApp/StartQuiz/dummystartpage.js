@@ -10,6 +10,7 @@ const centeredCardElement = document.getElementById('centeredCard');
 const errorMessage = document.getElementById('errorMessage');
 
 const startQuizBtn = document.getElementById('startQuizButtonStartPage');
+let quizDataRetrived = [];
 
 
 document.addEventListener('DOMContentLoaded', async function () {
@@ -26,8 +27,38 @@ document.addEventListener('DOMContentLoaded', async function () {
     await fetchQuizDetails(QuizId, token);
 
     startQuizBtn.addEventListener('click', function () {
-        window.location.href = `/StartQuiz/StartQuizSideBar.html?quizID=${QuizId}`;
-    })
+        fetch('http://localhost:5273/api/QuizAttempt/StartQuiz', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            },
+            body: JSON.stringify(QuizId)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw response;
+            }
+            return response.json();
+        })
+        .then(data => {
+            localStorage.setItem(`questions${QuizId}`, JSON.stringify(data.questions));
+            localStorage.setItem('answersSubmitted',false);
+            localStorage.setItem('startedTime',new Date().getTime());
+            quizDataRetrived.isAnweredQuestions = false;
+            quizDataRetrived.startedTime = new Date().getTime();
+            localStorage.setItem(`QuizData${QuizId}`, JSON.stringify(quizDataRetrived));
+            window.location.href = `/StartQuiz/StartQuizSideBar.html?quizID=${QuizId}`;
+        })
+        .catch(error => {
+            if (error.status === 409) {
+                alert("You Already Started the Quiz Cannot Start Again Only One Attempt is allowed !");
+            } else {
+                console.error('Error fetching or parsing data:', error);
+            }
+        });
+    });
+    
 
 });
 
@@ -56,12 +87,9 @@ async function fetchQuizDetails(QuizId, token) {
             throw new Error('Invalid quiz data');
         }
 
-        let quizDataRetrived = data;
-        quizDataRetrived.isAnweredQuestions = false;
-        quizDataRetrived.startedTime = new Date().getTime();
-        localStorage.setItem(`QuizData${data.QuizId}`,JSON.stringify(quizDataRetrived));
+        quizDataRetrived = data;
         console.log(localStorage.getItem(`QuizData${data.QuizId}`));
-        console.log("hello")
+        console.log("hello");
         updateQuizDetails(data);
 
     } catch (error) {
