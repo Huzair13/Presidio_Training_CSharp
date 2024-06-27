@@ -1,6 +1,35 @@
-document.addEventListener('DOMContentLoaded', function () {
+const startQuizElement = document.getElementById('startQuizElement');
+const errorMessageElement = document.getElementById('errorMessageDivStartQuiz');
+
+document.addEventListener('DOMContentLoaded', async function () {
+    //QuizID from parameter
     const params = new URLSearchParams(window.location.search);
     const quizId = params.get('quizID');
+    const isAnswersSubmitted = localStorage.getItem("answersSubmitted");
+
+    if (isAnswersSubmitted == "true") {
+        showErrorAndRedirect();
+    }
+
+    function showErrorAndRedirect() {
+        startQuizElement.style.display = "none";
+        errorMessageElement.classList.remove('hidden');
+
+        let countdown = 5;
+        errorMessage.textContent = `Quiz Submitted Already. Redirecting in ${countdown} seconds...`;
+
+        const interval = setInterval(() => {
+            countdown--;
+            errorMessage.textContent = `Quiz Submitted Already. Redirecting in ${countdown} seconds...`;
+
+            if (countdown <= 0) {
+                clearInterval(interval);
+                window.location.href = '/LoggedInHome/StudentHome.html';
+            }
+        }, 1000);
+    }
+
+    //token from local storage
     const token = localStorage.getItem('token');
 
     if (!quizId) {
@@ -13,27 +42,65 @@ document.addEventListener('DOMContentLoaded', function () {
     const previousBtn = document.getElementById('previous-btn');
     const nextBtn = document.getElementById('next-btn');
     const submitAnswersBtn = document.getElementById('submit-btn');
-    let questions = [];
+
+    //questions from local storage
+    let questions = JSON.parse(localStorage.getItem(`questions${quizId}`)) || [];
+    console.log(questions);
+
     let currentIndex = 0;
+
+    //answers
     let Answers = {};
 
     // Timer variables
     const quizDataKey = `QuizData${quizId}`;
-    const quizData = JSON.parse(localStorage.getItem(quizDataKey));
-    const timeLimit = quizData ? quizData.timeLimit : 20 * 60 * 1000; 
-    const startTimeKey = `QuizData${quizId}`;
-    let startTime = localStorage.getItem(startTimeKey);
+    console.log(quizDataKey);
 
-    if (!startTime) {
-        startTime = new Date().toISOString();
-        localStorage.setItem(startTimeKey, startTime);
-    }
+    const quizData = JSON.parse(localStorage.getItem(quizDataKey));
+    console.log(quizData);
+
+    const timeLimit = quizData ? parseTimeLimit(quizData.timelimit) : 20 * 60 * 1000;
+    console.log(timeLimit);
+
+    const startTimeKey = `StartTime${quizId}`;
+    console.log(startTimeKey);
+
+    let startTime = localStorage.getItem('startedTime');
+    console.log('StartTime :', startTime);
 
     const timerDisplay = document.getElementById('timer');
 
-    function startTimer() {
-        const remainingTime = calculateRemainingTime(startTime);
-        const endTime = new Date().getTime() + remainingTime;
+    function parseTimeLimit(timeLimitStr) {
+        const parts = timeLimitStr.split(':');
+        const hours = parseInt(parts[0], 10);
+        const minutes = parseInt(parts[1], 10);
+        const seconds = parseInt(parts[2], 10);
+        return (hours * 3600 + minutes * 60 + seconds) * 1000;
+    }
+
+    function startTimer(startTimeStr, timeLimit) {
+        if (!startTimeStr) {
+            timerDisplay.textContent = "No start time available.";
+            return;
+        }
+
+        const startTime = parseInt(startTimeStr, 10); // Ensure the start time is parsed as an integer
+        if (isNaN(startTime)) {
+            timerDisplay.textContent = "Invalid start time.";
+            return;
+        }
+
+        const remainingTime = calculateRemainingTime(startTime, timeLimit);
+
+        if (remainingTime <= 0) {
+            timerDisplay.textContent = "The start time is in the past or the quiz has already ended.";
+            return;
+        }
+
+        console.log("Remaining time:", remainingTime);
+
+        const endTime = startTime + timeLimit;
+        console.log("End time:", endTime);
 
         const timerInterval = setInterval(() => {
             const now = new Date().getTime();
@@ -47,118 +114,60 @@ document.addEventListener('DOMContentLoaded', function () {
             if (distance < 0) {
                 clearInterval(timerInterval);
                 timerDisplay.textContent = "Time's up!";
-                // Automatically submit the quiz here
                 submitAnswersBtn.click();
             }
         }, 1000);
     }
 
-    function calculateRemainingTime(startTime) {
+    function calculateRemainingTime(startTime, timeLimit) {
         const currentTime = new Date().getTime();
-        const elapsedTime = currentTime - new Date(startTime).getTime();
+        console.log("Current time:", currentTime);
+
+        const elapsedTime = currentTime - startTime;
+        console.log("Elapsed time:", elapsedTime);
+
         const remainingTime = timeLimit - elapsedTime;
+        console.log(`Remaining time: ${remainingTime}`);
         return remainingTime > 0 ? remainingTime : 0;
     }
 
-    startTimer();
+    startTimer(startTime, timeLimit);
 
-    fetch('http://localhost:5273/api/QuizAttempt/StartQuiz', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`
-        },
-        body: JSON.stringify(quizId)
-    })
-        .then(response => {
-            console.log(response);
-            if (!response.ok) {
-                throw response;
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log(JSON.stringify(data.questions));
-            localStorage.setItem('questions', JSON.stringify(data.questions));
-            questions = data.questions;
-            setQuizQuestions();
-        })
-        .catch(error => {
-            if (error.status === 409) {
-                let storedQuestions = localStorage.getItem("questions");
-                if (storedQuestions) {
-                    try {
-                        questions = JSON.parse(storedQuestions);
-                        setQuizQuestionsFromLocalStorage();
-                    } catch (parseError) {
-                        fetchingError(parseError);
-                    }
-                } else {
-                    fetchingError(error);
-                }
-            } else {
-                fetchingError(error);
-            }
+
+
+    //QUESTION LIST SIDE BAR
+    function setQuizQuestionsFromLocalStorage() {
+        questionList.innerHTML = '';
+
+        questions.forEach((question, index) => {
+            const listItem = document.createElement('li');
+            listItem.textContent = "Question " + question.questionId;
+            listItem.classList.add('list-group-item');
+            listItem.dataset.index = index;
+            listItem.addEventListener('click', () => {
+                saveCurrentAnswer();
+                showQuestion(index);
+            });
+            questionList.appendChild(listItem);
         });
 
-    function fetchingError(error) {
-        console.error('Error fetching or parsing data:', error);
-        answerArea.innerHTML = `
-            <div class="alert alert-danger" role="alert">
-                An error occurred while starting the quiz. Please try again later.
-            </div>
-        `;
+        showQuestion(0);
     }
 
-    function setQuizQuestionsFromLocalStorage() {
-        const answersSubmitted = localStorage.getItem('answersSubmitted');
-        if (answersSubmitted) {
-            answerArea.innerHTML = `
-                <div class="alert alert-warning" role="alert">
-                    You have already submitted your answers for this quiz.
+    // QUESTIONS RENDERING
+    if (questions.length > 0) {
+        setQuizQuestionsFromLocalStorage();
+    } else {
+        answerArea.innerHTML = `
+                <div class="alert alert-danger" role="alert">
+                    No quiz questions available. Please contact your instructor.
                 </div>
             `;
-            return;
-        }
-
-        questionList.innerHTML = '';
-
-        questions.forEach((question, index) => {
-            const listItem = document.createElement('li');
-            listItem.textContent = "Question " + question.questionId;
-            listItem.classList.add('list-group-item');
-            listItem.dataset.index = index;
-            listItem.addEventListener('click', () => {
-                saveCurrentAnswer();
-                showQuestion(index);
-            });
-            questionList.appendChild(listItem);
-        });
-
-        showQuestion(0);
     }
 
-    function setQuizQuestions() {
-        questionList.innerHTML = '';
-
-        questions.forEach((question, index) => {
-            const listItem = document.createElement('li');
-            listItem.textContent = "Question " + question.questionId;
-            listItem.classList.add('list-group-item');
-            listItem.dataset.index = index;
-            listItem.addEventListener('click', () => {
-                saveCurrentAnswer();
-                showQuestion(index);
-            });
-            questionList.appendChild(listItem);
-        });
-
-        showQuestion(0);
-    }
-
+    //QUESTION AREA
     function showQuestion(index) {
         currentIndex = index;
-
         const listItems = questionList.querySelectorAll('.list-group-item');
         listItems.forEach(item => item.classList.remove('selected'));
         listItems[index].classList.add('selected');
@@ -171,10 +180,10 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             loadNewQuestion(selectedQuestion);
         }
-
         updateButtonStates();
     }
 
+    //LOAD SAVED ANSWERS
     function loadSavedAnswer(question, savedAnswer) {
         if (question.questionType === 'Fillups') {
             answerArea.innerHTML = `
@@ -214,6 +223,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    //LOAD NEW QUESTIONS
     function loadNewQuestion(question) {
         if (question.questionType === 'Fillups') {
             answerArea.innerHTML = `
@@ -253,6 +263,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    //PREVIOUS QUESTION BUTTON
     previousBtn.addEventListener('click', function () {
         if (currentIndex > 0) {
             saveCurrentAnswer();
@@ -260,6 +271,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    //NEXT QUESTION BUTTON
     nextBtn.addEventListener('click', function () {
         if (currentIndex < questions.length - 1) {
             saveCurrentAnswer();
@@ -267,6 +279,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+
+    //SAVE CURRENT ANSWER
     function saveCurrentAnswer() {
         const selectedQuestion = questions[currentIndex];
 
@@ -281,7 +295,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    submitAnswersBtn.addEventListener('click', function () {
+
+    //SUBMIT ANSWER
+    submitAnswersBtn.addEventListener('click', async function () {
         saveCurrentAnswer();
         const unansweredQuestions = questions.filter(question => !Answers.hasOwnProperty(question.questionId));
         if (unansweredQuestions.length > 0) {
@@ -304,40 +320,57 @@ document.addEventListener('DOMContentLoaded', function () {
 
         console.log('Submitted Answers:', JSON.stringify(submittedAnswers));
 
-        fetch('http://localhost:5273/api/QuizAttempt/submitAllAnswer', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`
-            },
-            body: JSON.stringify(submittedAnswers)
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                const contentType = response.headers.get('content-type');
-                if (contentType && contentType.includes('application/json')) {
-                    return response.json();
-                } else {
-                    return response.text();
-                }
-            })
-            .then(data => {
-                if (typeof data === 'string') {
-                    console.log(data);
-                    localStorage.setItem("answersSubmitted", "true");
-                    alert(data);
-                } else {
-                    console.log(data);
-                    localStorage.setItem("answersSubmitted", "true");
-                    alert('Answers submitted successfully.');
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching or parsing data:', error);
+        try {
+            const response = await fetch('http://localhost:5273/api/QuizAttempt/submitAllAnswer', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify(submittedAnswers)
             });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.message);
+            }
+
+            const contentType = response.headers.get('content-type');
+            if (contentType && contentType.includes('application/json')) {
+                const data = await response.json();
+                console.log(data);
+                localStorage.setItem("answersSubmitted", "true");
+                alert('Answers submitted successfully.');
+                window.location.href = '/LoggedInHome/StudentHome.html';
+            } else {
+                const data = await response.text();
+                console.log(data);
+                localStorage.setItem("answersSubmitted", "true");
+                alert(data);
+                window.location.href = '/LoggedInHome/StudentHome.html';
+            }
+        } catch (error) {
+            console.error('Error:', error.message);
+
+            if (error.message.includes('User has already answered')) {
+                answerArea.innerHTML = `
+                    <div class="alert alert-warning" role="alert">
+                        You have already submitted your answers for this quiz.
+                    </div>
+                `;
+
+                questionList.style.display = 'none';
+            } else {
+                console.log('Error message does not contain the substring.');
+            }
+        }
     });
+
+    function showError(message) {
+        console.error('Error:', message);
+        // Display error message in your UI (e.g., update an error div)
+    }
+
 
     function updateButtonStates() {
         previousBtn.disabled = currentIndex === 0;
