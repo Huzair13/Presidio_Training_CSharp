@@ -40,7 +40,11 @@ nav{
     background-color: #ECECEC; 
 }
 
-
+.quiz-card {
+    text-align: center;
+    margin-bottom: 10px;
+    margin: 0;
+}
 
 .card {
     margin: 2em 0.6em;

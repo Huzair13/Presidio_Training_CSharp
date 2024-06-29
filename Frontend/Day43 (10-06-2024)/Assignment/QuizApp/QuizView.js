@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(data => {
         quizzes = data;
         console.log(quizzes);
-        renderQuizzes(quizzes.slice(0, 6));
+        renderQuizzes(quizzes.slice(0, 3));
 
         document.getElementById('see-all-btn').addEventListener('click', function() {
             this.style.display = 'none';

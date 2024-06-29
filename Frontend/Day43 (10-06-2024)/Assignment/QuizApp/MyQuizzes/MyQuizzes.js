@@ -1,7 +1,7 @@
 const quizzesPerPage = 12;
 let currentPage = 1;
 
-const token=localStorage.getItem('token');
+const token = localStorage.getItem('token');
 
 const renderQuizzes = (quizzesToRender) => {
     const quizGrid = document.getElementById('quiz-grid');
@@ -27,26 +27,31 @@ const renderQuizzes = (quizzesToRender) => {
                     </ul>
                 </div>
                 <div class="card-footer bg-white border-top-0 text-right text-center">
-                    <button class="btn btn-primary btn-sm">Use Quiz</button>
+                    <button class="btn btn-primary btn-sm edit-quiz-btn" data-quiz-id="${quiz.quizId}">Edit Quiz</button>
                 </div>
             </div>
         `;
 
         quizGrid.appendChild(col);
     });
+    document.querySelectorAll('.edit-quiz-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const quizId = parseInt(this.getAttribute('data-quiz-id'));
+            window.location.href = `/EditQuiz/EditQuiz.html?quizID=${quizId}`;
+        });
+    });
 };
 
-//QUIZ IMAGE
+// QUIZ IMAGE
 const style = document.createElement('style');
 style.textContent = `
     .quiz-image {
         width: 100%;
-        height: 200px; /* Adjust as per your design requirements */
+        height: 200px; 
         object-fit: cover;
     }
 `;
 document.head.appendChild(style);
-
 
 const renderPagination = (totalQuizzes, quizzesPerPage, currentPage) => {
     const paginationContainer = document.querySelector('.pagination');
@@ -78,7 +83,7 @@ const renderPagination = (totalQuizzes, quizzesPerPage, currentPage) => {
     }
 
     document.querySelectorAll('.page-link').forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
             const page = parseInt(this.getAttribute('data-page'));
             currentPage = page;
@@ -90,44 +95,94 @@ const renderPagination = (totalQuizzes, quizzesPerPage, currentPage) => {
     });
 };
 
-let quizzes = []; 
+let quizzes = [];
 
+const sortAZBtn = document.getElementById('sort-az');
+const sortZABtn = document.getElementById('sort-za');
 
-document.addEventListener('DOMContentLoaded',function(){
-    const startQuizBtn = document.getElementById('startQuizHome');
-    const QuizIDInput = document.getElementById('startQuizNumber');
-    startQuizBtn.addEventListener('click',function(){
-        const QuizID = QuizIDInput.value;
-        window.location.href = `/StartQuiz/StartPage.html?quizID=${QuizID}`;
-    })
-
-    const apiUrl = 'http://localhost:5273/api/ViewQuiz/GetAllQuizzes';
+document.addEventListener('DOMContentLoaded', () => {
+    let originalQuizzes = [];
+    const apiUrl = 'http://localhost:5273/api/ViewQuiz/GetQuizzesBySpecificTeacher';
     fetch(apiUrl, {
+        method :'GET',
         headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`
         }
     })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(data => {
-        quizzes = data;
-        console.log(quizzes);
-        renderQuizzes(quizzes.slice(0, 3));
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            originalQuizzes = data;
+            quizzes = originalQuizzes.slice(0);
+            console.log(quizzes);
+            document.getElementById('pagination-container').style.display = 'block';
+            renderQuizzes(quizzes.slice(0, quizzesPerPage));
+            renderPagination(quizzes.length, quizzesPerPage, 1);
 
-        document.getElementById('see-all-btn').addEventListener('click', function() {
-            window.location.href="/ViewAllQuizzes/ViewAllQuiz.html"
-            // this.style.display = 'none';
-            // document.getElementById('pagination-container').style.display = 'block';
-            // renderQuizzes(quizzes.slice(0, quizzesPerPage));
-            // renderPagination(quizzes.length, quizzesPerPage, 1);
+        })
+        .catch(error => {
+            console.error('Error fetching quizzes:', error);
         });
-    })
-    .catch(error => {
-        console.error('Error fetching quizzes:', error);
+
+    document.getElementById('search-button').addEventListener('click', () => {
+        const quizId = document.getElementById('quiz-id-input').value.trim();
+
+        if (quizId === '') {
+            quizzes = originalQuizzes.slice(0);
+        } else {
+            quizzes = originalQuizzes.filter(quiz => quiz.quizId.toString() === quizId);
+        }
+
+        currentPage = 1;
+        renderQuizzes(quizzes.slice(0, quizzesPerPage));
+        renderPagination(quizzes.length, quizzesPerPage, 1);
+    });
+
+    document.getElementById('filter-button').addEventListener('click', () => {
+        const quizType = document.getElementById('quizType').value;
+        const isMultipleAllowed = document.getElementById('isMultipleAllowed').value;
+
+        quizzes = originalQuizzes.filter(quiz => {
+            let matchesType = true;
+            let matchesMultiple = true;
+
+            if (quizType !== '') {
+                matchesType = quiz.quizType === quizType;
+            }
+
+            if (isMultipleAllowed !== '') {
+                matchesMultiple = quiz.isMultpleAllowed.toString() === isMultipleAllowed;
+            }
+
+            return matchesType && matchesMultiple;
+        });
+
+        currentPage = 1;
+        renderQuizzes(quizzes.slice(0, quizzesPerPage));
+        renderPagination(quizzes.length, quizzesPerPage, 1);
+    });
+
+    function sortQuizzes(order) {
+        if (order === 'az') {
+            quizzes.sort((a, b) => a.quizName.toLowerCase().localeCompare(b.quizName.toLowerCase()));
+        } else if (order === 'za') {
+            quizzes.sort((a, b) => b.quizName.toLowerCase().localeCompare(a.quizName.toLowerCase()));
+        }
+        currentPage = 1;
+        renderQuizzes(quizzes.slice(0, quizzesPerPage));
+        renderPagination(quizzes.length, quizzesPerPage, 1);
+    }
+
+    sortAZBtn.addEventListener('click', () => {
+        sortQuizzes('az');
+    });
+
+    sortZABtn.addEventListener('click', () => {
+        sortQuizzes('za');
     });
 });
