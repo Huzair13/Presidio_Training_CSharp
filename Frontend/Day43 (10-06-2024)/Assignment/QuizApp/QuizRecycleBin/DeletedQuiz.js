@@ -27,30 +27,22 @@ const renderQuizzes = (quizzesToRender) => {
                     </ul>
                 </div>
                 <div class="card-footer bg-white border-top-0 text-right text-center">
-                    <button class="btn btn-primary btn-sm edit-quiz-btn" data-quiz-id="${quiz.quizId}">Edit Quiz</button>
-                    <button class="btn btn-primary btn-sm del-quiz-btn" data-quiz-id="${quiz.quizId}">Delete</button>
+                    <button class="btn btn-primary btn-sm restore-quiz-btn" data-quiz-id="${quiz.quizId}">Restore</button>
                 </div>
             </div>
         `;
 
         quizGrid.appendChild(col);
     });
-    document.querySelectorAll('.edit-quiz-btn').forEach(button => {
-        button.addEventListener('click', function () {
-            const quizId = parseInt(this.getAttribute('data-quiz-id'));
-            window.location.href = `/EditQuiz/EditQuiz.html?quizID=${quizId}`;
-        });
-    });
-
-    document.querySelectorAll('.del-quiz-btn').forEach(button => {
+    document.querySelectorAll('.restore-quiz-btn').forEach(button => {
         button.addEventListener('click', async function () {
             const quizId = parseInt(this.getAttribute('data-quiz-id'));
             const confirmation = confirm("Are you sure you want to delete this question?");
 
             if(confirmation){
                 try {
-                    const response = await fetch('http://localhost:5273/api/Quiz/SoftDeleteQuiz', {
-                        method: 'DELETE',
+                    const response = await fetch('http://localhost:5273/api/Quiz/UndoSoftDelete', {
+                        method: 'POST',
                         headers: {
                             'content-Type': 'application/json',
                             'Authorization': `Bearer ${token}`
@@ -69,7 +61,6 @@ const renderQuizzes = (quizzesToRender) => {
                         }
                     }
                     const data = await response.json();
-                    console.log(data);
                     window.location.reload();
                 }
                 catch (error) {
@@ -77,12 +68,10 @@ const renderQuizzes = (quizzesToRender) => {
                 }
             }
             else{
-                alert("cancelled");
+                alert("cencelled");
             }
-
         })
     })
-
 };
 
 // QUIZ IMAGE
@@ -144,8 +133,9 @@ const sortAZBtn = document.getElementById('sort-az');
 const sortZABtn = document.getElementById('sort-za');
 
 document.addEventListener('DOMContentLoaded', () => {
+    const useQuizButton = document.getElementById('useQuizBtn');
     let originalQuizzes = [];
-    const apiUrl = 'http://localhost:5273/api/ViewQuiz/GetQuizzesBySpecificTeacher';
+    const apiUrl = 'http://localhost:5273/api/ViewQuiz/GetAllSoftDeletedQuiz';
     fetch(apiUrl, {
         method: 'GET',
         headers: {

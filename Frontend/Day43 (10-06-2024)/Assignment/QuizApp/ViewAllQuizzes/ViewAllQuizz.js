@@ -35,30 +35,30 @@ const renderQuizzes = (quizzesToRender) => {
         quizGrid.appendChild(col);
     });
     document.querySelectorAll('.use-quiz-btn').forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             const quizId = parseInt(this.getAttribute('data-quiz-id'));
-            fetch('http://localhost:5273/api/Quiz/CreateQuizByExistingQuiz',{
-                method : 'POST',
+            fetch('http://localhost:5273/api/Quiz/CreateQuizByExistingQuiz', {
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                     'Authorization': `Bearer ${token}`
                 },
-                body : JSON.stringify({
-                    quizId : quizId
+                body: JSON.stringify({
+                    quizId: quizId
                 })
             })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
-            .then(data => {
-                window.location.href = `/UseQuiz.html?quizID=${data.quizId}`;
-            })
-            .catch(error => {
-                console.error('Error fetching quizzes:', error);
-            });
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    window.location.href = `/UseQuiz.html?quizID=${data.quizId}`;
+                })
+                .catch(error => {
+                    console.error('Error fetching quizzes:', error);
+                });
         });
     });
 };
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let originalQuizzes = [];
     const apiUrl = 'http://localhost:5273/api/ViewQuiz/GetAllQuizzes';
     fetch(apiUrl, {
-        method :'GET',
+        method: 'GET',
         headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`
