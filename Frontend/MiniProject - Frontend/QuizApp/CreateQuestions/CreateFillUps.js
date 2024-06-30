@@ -2,19 +2,15 @@ document.addEventListener('DOMContentLoaded',function(){
 
     const token = localStorage.getItem('token');
 
-    const QuestionInputField = document.getElementById('questionInputMCQ');
-    const Option1InputField = document.getElementById('option1MCQ');
-    const Option2InputField = document.getElementById('option2MCQ');
-    const Option3InputField = document.getElementById('option3MCQ');
-    const Option4InputField = document.getElementById('option4MCQ');
-    const pointsInput = document.getElementById('pointsInput');
-    const QuestionCategory = document.getElementById('categoryInput');
-    const otherCategoryInput = document.getElementById('otherCategoryInput');
+    const QuestionInputField = document.getElementById('questionInputFillups');
+    const answerElement =  document.getElementById('blankAnswer');
+    const QuestionPointsInput = document.getElementById('pointsInputFillups');
+    const QuestionCategory = document.getElementById('categoryInputFillUps');
+    const otherCategoryInput = document.getElementById('otherCategoryInputFillups');
     
-    const difficultyLevelInput = document.getElementById('difficultyLevelInput');
-    const correctAnswerInput = document.getElementById('correctAnswerInput');
+    const difficultyLevelInput = document.getElementById('difficultyLevelInputFillUps');
 
-    const createButton = document.getElementById('CreateMCQQuestion');
+    const createButton = document.getElementById('createFillUpsQuestions');
 
 
     QuestionCategory.addEventListener('change', function() {
@@ -53,30 +49,22 @@ document.addEventListener('DOMContentLoaded',function(){
     createButton.addEventListener('click', function() {
         printToken();
         const QuestionTxt = QuestionInputField.value;
-        const option1 = Option1InputField.value;
-        const option2 = Option2InputField.value;
-        const option3 = Option3InputField.value;
-        const option4 = Option4InputField.value;
-        const points = parseFloat(pointsInput.value); 
+        const points = parseFloat(QuestionPointsInput.value); 
         const category = QuestionCategory.value === 'Other' ? otherCategoryInput.value : QuestionCategory.value;
         const difficultyLevel = parseInt(difficultyLevelInput.value); 
-        const correctAnswer = correctAnswerInput.value;
+        const correctAnswer = answerElement.value;
     
         const data = {
             QuestionText: QuestionTxt,
             Points: points,
             Category: category,
             DifficultyLevel: difficultyLevel,
-            Choice1: option1,
-            Choice2: option2,
-            Choice3: option3,
-            Choice4: option4,
             CorrectAnswer: correctAnswer
         };
     
         console.log("Data to be sent:", data);
     
-        fetch('http://localhost:5273/api/Question/AddMCQQuestion', {
+        fetch('http://localhost:5273/api/Question/AddFillUpsQuestion', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -90,7 +78,6 @@ document.addEventListener('DOMContentLoaded',function(){
             return res.json();
         }).then(data => {
             console.log("Response:", data);
-            // Handle response as needed
         }).catch(error => {
             console.error('Error:', error);
         });

@@ -45,6 +45,7 @@
                 console.log(data);
                 localStorage.setItem('token', data.token);
                 localStorage.setItem('userID',data.userID);
+                localStorage.setItem('role',data.role);
 
                 const token = localStorage.getItem('token');
                 const decodedToken = parseJwt(token);
@@ -53,6 +54,7 @@
                 console.log(token);
                 console.log(decodedToken);
                 console.log(userRole);
+                // alert(data.userRole);
                 window.location.href = '/LoggedInHome/StudentHome.html'
             })
             .catch(error => {
