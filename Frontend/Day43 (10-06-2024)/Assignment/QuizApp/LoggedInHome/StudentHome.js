@@ -2,6 +2,7 @@ const quizzesPerPage = 12;
 let currentPage = 1;
 
 const token=localStorage.getItem('token');
+const role = localStorage.getItem('role');
 
 const renderQuizzes = (quizzesToRender) => {
     const quizGrid = document.getElementById('quiz-grid');
@@ -41,12 +42,11 @@ const style = document.createElement('style');
 style.textContent = `
     .quiz-image {
         width: 100%;
-        height: 200px; /* Adjust as per your design requirements */
+        height: 200px; 
         object-fit: cover;
     }
 `;
 document.head.appendChild(style);
-
 
 const renderPagination = (totalQuizzes, quizzesPerPage, currentPage) => {
     const paginationContainer = document.querySelector('.pagination');
@@ -121,10 +121,6 @@ document.addEventListener('DOMContentLoaded',function(){
 
         document.getElementById('see-all-btn').addEventListener('click', function() {
             window.location.href="/ViewAllQuizzes/ViewAllQuiz.html"
-            // this.style.display = 'none';
-            // document.getElementById('pagination-container').style.display = 'block';
-            // renderQuizzes(quizzes.slice(0, quizzesPerPage));
-            // renderPagination(quizzes.length, quizzesPerPage, 1);
         });
     })
     .catch(error => {
