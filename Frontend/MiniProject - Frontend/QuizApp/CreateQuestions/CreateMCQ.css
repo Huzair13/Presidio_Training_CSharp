@@ -10,7 +10,7 @@ body {
 }
 
 
-.quiz-container {
+.question-container {
     width: 100%;
     max-width: 700px;
     margin: 50px auto; 
@@ -85,4 +85,57 @@ body {
 #otherCategoryInput {
     display: none;
     margin-top: 10px;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav {
+    background: #ECECEC;
+}
+
+.footer p,
+.footer h5,
+.footer ul {
+    font-size: calc(0.8rem + 0.2vw);
+    word-wrap: break-word;
+}
+
+@media (max-width : 200px) {
+    .navbar .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 0.5rem 0;
+        text-align: center;
+    }
+
+    .navbar .me-3 {
+        font-size: 0.875rem;
+        margin-bottom: 0;
+    }
+
+    .studentProfile {
+        background: #ECECEC;
+        color: #276792;
+        padding: 5px;
+    }
+}
+.navbar .fa-user-circle {
+    font-size: 1.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }
