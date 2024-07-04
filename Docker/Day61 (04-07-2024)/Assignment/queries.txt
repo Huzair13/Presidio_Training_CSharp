@@ -1,0 +1,29 @@
+INSERT INTO Department (DepartmentName) VALUES ('HR'), ('ASSOCIATE ENGINEER'), ('CLOUD ENGINEER'),('FULL STACK DEVELOPER');
+
+
+INSERT INTO Employee (EmployeeName, DateOfBirth, Phone, DepartmentID) VALUES
+('Huzair', '2002-03-13', '9677381857', 1),
+('Ahmed', '2002-03-15', '9877665544', 2),
+('Vijay', '2002-03-14', '9877664433', 3),
+('Arivu', '2002-03-16', '8977349833', 4);
+
+
+INSERT INTO Salary (EmployeeID, Amount) VALUES
+(1, 50000.00),
+(2, 70000.00),
+(3, 60000.00),
+(4, 80000.00);
+
+
+SELECT 
+    e.EmployeeName, 
+    DATE_PART('year', AGE(e.DateOfBirth)) AS Age, 
+    e.Phone, 
+    d.DepartmentName, 
+    s.Amount AS Salary
+FROM 
+    Employee e
+JOIN 
+    Department d ON e.DepartmentID = d.DepartmentID
+JOIN 
+    Salary s ON e.EmployeeID = s.EmployeeID;
