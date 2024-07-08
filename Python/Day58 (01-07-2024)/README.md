@@ -36,6 +36,7 @@ eg :
 
 update the instance variable
 eg :
+
     class Laptop:
         brand = 'HP'
         processor = 'intel 5'
@@ -44,6 +45,7 @@ eg :
     w2 = Laptop()
     w2.processor = 'intel 7'
     print(w2.brand, w2.processor)
+    
 
 __str__() used to define how a class object should be represented as a string
 eg :
