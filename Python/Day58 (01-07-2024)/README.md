@@ -49,12 +49,16 @@ eg :
 
 __str__() used to define how a class object should be represented as a string
 eg :
+
+
     class MyData:
     def __init__(self, name, company):
         self.name = name
         self.company = company
     def __str__(self):
         return f"My name is {self.name} and I work in {self.company}."
+
+        
 
 we can have a data specific class by importing dataclass
 eg :
@@ -69,12 +73,15 @@ eg :
 
 1) We can call the parent class __init__ using super() keyword
    Eg :
+
    def __init__(self, name, id, company, salary):
        super().__init__(name, id, company)
        self.salary = salary
    or we can directly call it like the bleow
        Employee.__init__(self,name, id, company)
-2) Multiple Inheritance is not supported in other languages due toe the diamond problem
+
+   
+3) Multiple Inheritance is not supported in other languages due toe the diamond problem
    A
    / B   C   ----- DIAMOND PROBLEM
    \ /
@@ -82,6 +89,8 @@ eg :
    but python supports multiple inheritance with the help of MRO(METHOD RESOLUTION ORDER)
 
    eg :
+
+   
    class A:
        def method(self):
            print("Method from A")
@@ -96,8 +105,12 @@ eg :
    d = D()
    d.method()
    print(D.mro())
-3) Multilevel Inheritance
+
+   
+5) Multilevel Inheritance
    eg :
+
+   
    class Animal:
        def __init__(self, name):
            self.name = name
@@ -109,8 +122,12 @@ eg :
    class Labrador(Dog):
        def speak(self):
            return f"{self.name} says Woof Woof!"
-5) Hierarchical inheritance
+
+   
+7) Hierarchical inheritance
    eg:
+
+   
    class Animal:
        def __init__(self, name):
            self.name = name
@@ -122,8 +139,12 @@ eg :
    class Cat(Animal):
        def speak(self):
            return f"{self.name} says Meow!"
-6) Hybrid Inheritance - combination of all the inheritance
+
+   
+9) Hybrid Inheritance - combination of all the inheritance
    eg :
+
+   
    class Person:
        def __init__(self, name):
            self.name = name
@@ -148,10 +169,13 @@ eg :
        def display_details(self):
            return f"{super().display_name()}, Role: {self.role}"
 
+   
+
 **--------------------------- POLYMORPHISM ---------------------------------------**
 
 1) method overriding
    eg :
+   
    class Vehicle:
        def display_info(self):
            return "Vehicle"
@@ -161,8 +185,10 @@ eg :
    class Truck(Vehicle):
        def display_info(self):
            return "Truck"
-2) polymorphism in class methods
+   
+3) polymorphism in class methods
    eg :
+   
    class Cat:
        def __init__(self, name, age):
            self.name = name
@@ -179,6 +205,7 @@ eg :
            print(f"I am a dog. My name is {self.name}. I am {self.age} years old.")
        def make_sound(self):
            print("Bark")
+   
 
 **-------------------------- MODULES -------------------------------------**
 learnt from
@@ -208,26 +235,34 @@ https://www.geeksforgeeks.org/python-exception-handling/
 
 1) we can handle the specifi exception using the keyword try and except
    eg:
+   
    try :
        print(3/0)
    except ZeroDivisionError:
        print("cannot divide a number with 0")
-2) Using Finally keyword to execute after try except
+   
+3) Using Finally keyword to execute after try except
    eg :
+   
    try :
        print(3/0)
    except ZeroDivisionError:
        print("cannot divide a number with 0")
    finally:
        print("executed")
-3) Raise exception using Raise Keyword
+   
+5) Raise exception using Raise Keyword
    eg :
+   
    try:
        raise NameError("Hi there")
    except NameError:
        print ("An exception")
-4) custom exception
+   
+7) custom exception
    eg :
+
+   
    class ValueTooHighError(Exception):
        def __init__(self, message="Value is too high!"):
            self.message = message
@@ -241,35 +276,45 @@ https://www.geeksforgeeks.org/python-exception-handling/
        else:
            print(f"Processed value: {value}")
 
+   
+
 **--------------------------- FILES ---------------------------------**
 LEARNING FROM
 https://www.programiz.com/python-programming/file-operation
 
 1) read file
    eg :
+   
    file1 = open("files/test.txt")
    content = file1.read()
-2) write file
+   
+3) write file
    eg:
+   
    file2 = open('files/file2.txt', 'w')
    file2.write('Programming is Fun.\n')
-3) close file
+
+   
+5) close file
    eg:
+   
    file1.close()
-4) using with open -- when we use with open it closes the file automatically outside the with
+   
+7) using with open -- when we use with open it closes the file automatically outside the with
    eg :
+
+   
    with open("files/test.txt", "r") as file1:
    content = file1.read()
    print(content)
+
+   
    1) We can use xlwt module to read and write in excel file
       eg
+      
 
       import xlw
-
       from xlwt import Workbook
-
       wb = Workbook()
-
       sheet1 = wb.add_sheet('Sheet 1')
-
       sheet1.write(1, 0, 'ISBT DEHRADUN')
