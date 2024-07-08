@@ -68,10 +68,10 @@ eg :
 1) We can call the parent class __init__ using super() keyword
    Eg :
    def __init__(self, name, id, company, salary):
-   super().__init__(name, id, company)
-   self.salary = salary
+       super().__init__(name, id, company)
+       self.salary = salary
    or we can directly call it like the bleow
-   Employee.__init__(self,name, id, company)
+       Employee.__init__(self,name, id, company)
 2) Multiple Inheritance is not supported in other languages due toe the diamond problem
    A
    / B   C   ----- DIAMOND PROBLEM
@@ -81,100 +81,102 @@ eg :
 
    eg :
    class A:
-   def method(self):
-   print("Method from A")
+       def method(self):
+           print("Method from A")
    class B(A):
-   def method(self):
-   print("Method from B")
+       def method(self):
+           print("Method from B")
    class C(A):
-   def method(self):
-   print("Method from C")
+       def method(self):
+           print("Method from C")
    class D(B, C):
-   pass
+       pass
    d = D()
    d.method()
    print(D.mro())
 3) Multilevel Inheritance
-   eg :class Animal:
-   def __init__(self, name):
-   self.name = name
-   def speak(self):
-   passclass Dog(Animal):
-   def speak(self):
-   return f"{self.name} says Woof!"
+   eg :
+   class Animal:
+       def __init__(self, name):
+           self.name = name
+       def speak(self):
+           pass
+   class Dog(Animal):
+       def speak(self):
+           return f"{self.name} says Woof!"
    class Labrador(Dog):
-   def speak(self):
-   return f"{self.name} says Woof Woof!"
-4) Hierarchical inheritance
+       def speak(self):
+           return f"{self.name} says Woof Woof!"
+5) Hierarchical inheritance
    eg:
    class Animal:
-   def __init__(self, name):
-   self.name = name
-   def speak(self):
-   pass
+       def __init__(self, name):
+           self.name = name
+       def speak(self):
+           pass
    class Dog(Animal):
-   def speak(self):
-   return f"{self.name} says Woof!"
+       def speak(self):
+           return f"{self.name} says Woof!"
    class Cat(Animal):
-   def speak(self):
-   return f"{self.name} says Meow!"
-5) Hybrid Inheritance - combination of all the inheritance
+       def speak(self):
+           return f"{self.name} says Meow!"
+6) Hybrid Inheritance - combination of all the inheritance
    eg :
    class Person:
-   def __init__(self, name):
-   self.name = name
-   def display_name(self):
-   return f"Name: {self.name}"
+       def __init__(self, name):
+           self.name = name
+       def display_name(self):
+           return f"Name: {self.name}"
    class Employee(Person):
-   def __init__(self, name, emp_id):
-   super().__init__(name)
-   self.emp_id = emp_id
-   def display_details(self):
-   return f"{super().display_name()}, Employee ID: {self.emp_id}"
+       def __init__(self, name, emp_id):
+           super().__init__(name)
+           self.emp_id = emp_id
+       def display_details(self):
+           return f"{super().display_name()}, Employee ID: {self.emp_id}"
    class Manager(Employee):
-   def __init__(self, name, emp_id, department):
-   super().__init__(name, emp_id)
-   self.department = department
-   def display_details(self):
-   return f"{super().display_details()}, Department: {self.department}"
+       def __init__(self, name, emp_id, department):
+           super().__init__(name, emp_id)
+           self.department = department
+       def display_details(self):
+           return f"{super().display_details()}, Department: {self.department}"
    class Worker(Person):
-   def __init__(self, name, role):
-   super().__init__(name)
-   self.role = role
-   def display_details(self):
-   return f"{super().display_name()}, Role: {self.role}"
+       def __init__(self, name, role):
+           super().__init__(name)
+           self.role = role
+       def display_details(self):
+           return f"{super().display_name()}, Role: {self.role}"
 
 **--------------------------- POLYMORPHISM ---------------------------------------**
 
 1) method overriding
    eg :
    class Vehicle:
-   def display_info(self):
-   return "Vehicle"
+       def display_info(self):
+           return "Vehicle"
    class Car(Vehicle):
-   def display_info(self):
-   return "Car"
+       def display_info(self):
+           return "Car"
    class Truck(Vehicle):
-   def display_info(self):
-   return "Truck"
+       def display_info(self):
+           return "Truck"
 2) polymorphism in class methods
    eg :
    class Cat:
-   def __init__(self, name, age):
-   self.name = name
-   self.age = age
-   def info(self):
-   print(f"I am a cat. My name is {self.name}. I am {self.age} years old.")
-   def make_sound(self):
-   print("Meow")
+       def __init__(self, name, age):
+           self.name = name
+           self.age = age
+       def info(self):
+           print(f"I am a cat. My name is {self.name}. I am {self.age} years old.")
+       def make_sound(self):
+           print("Meow")
    class Dog:
-   def __init__(self, name, age):
-   self.name = name
-   self.age = age
-   def info(self):
-   print(f"I am a dog. My name is {self.name}. I am {self.age} years old.")
-   def make_sound(self):
-   print("Bark")
+       def __init__(self, name, age):
+           self.name = name
+           self.age = age
+       def info(self):
+           print(f"I am a dog. My name is {self.name}. I am {self.age} years old.")
+       def make_sound(self):
+           print("Bark")
 
 **-------------------------- MODULES -------------------------------------**
 learnt from
@@ -205,37 +207,37 @@ https://www.geeksforgeeks.org/python-exception-handling/
 1) we can handle the specifi exception using the keyword try and except
    eg:
    try :
-   print(3/0)
+       print(3/0)
    except ZeroDivisionError:
-   print("cannot divide a number with 0")
+       print("cannot divide a number with 0")
 2) Using Finally keyword to execute after try except
    eg :
    try :
-   print(3/0)
+       print(3/0)
    except ZeroDivisionError:
-   print("cannot divide a number with 0")
+       print("cannot divide a number with 0")
    finally:
-   print("executed")
+       print("executed")
 3) Raise exception using Raise Keyword
    eg :
    try:
-   raise NameError("Hi there")
+       raise NameError("Hi there")
    except NameError:
-   print ("An exception")
+       print ("An exception")
 4) custom exception
    eg :
    class ValueTooHighError(Exception):
-   def __init__(self, message="Value is too high!"):
-   self.message = message
-   super().__init__(self.message)
-   def process_value(value):
-   try:
-   if value > 100:
-   raise ValueTooHighError
-   except ValueTooHighError as e:
-   print(f"Error: {e}")
-   else:
-   print(f"Processed value: {value}")
+       def __init__(self, message="Value is too high!"):
+           self.message = message
+           super().__init__(self.message)
+       def process_value(value):
+       try:
+           if value > 100:
+           raise ValueTooHighError
+       except ValueTooHighError as e:
+       print(f"Error: {e}")
+       else:
+           print(f"Processed value: {value}")
 
 **--------------------------- FILES ---------------------------------**
 LEARNING FROM
