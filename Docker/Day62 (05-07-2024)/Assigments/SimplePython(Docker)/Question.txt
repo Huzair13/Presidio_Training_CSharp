@@ -1,0 +1,3 @@
+create a simple docker image that will equip for execution a 
+simple python program that prints hello world and execute 
+container for teh same
