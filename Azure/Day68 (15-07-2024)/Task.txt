@@ -23,3 +23,7 @@ App service config - https://learn.microsoft.com/en-us/azure/app-service/quickst
 https://www.nytimes.com/games/wordle/index.html
 
 deploy a similar app using HTML,CSS,JS into Azure App service
+
+
+static web app
+https://learn.microsoft.com/en-us/azure/static-web-apps/getting-started?tabs=vanilla-javascript
