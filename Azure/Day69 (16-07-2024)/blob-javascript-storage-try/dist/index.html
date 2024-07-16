@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>#status {
+  width: 593px;
+  height: 160px;
+  overflow: scroll;
+}
+
+#file-list {
+  width: 593px;
+  height: 222px;
+  overflow: scroll;
+}
+
+.image-preview {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 5px;
+}
+</style>
+</head>
+<body>
+  <button id="create-container-button">Create container</button>
+  <button id="select-button">Select and upload files</button>
+  <input type="file" id="file-input" multiple="" style="display: none">
+  <button id="list-button">List files</button>
+  <button id="delete-button">Delete selected files</button>
+  <button id="delete-container-button">Delete container</button>
+  <p><b>Status:</b></p>
+  <div id="status"></div>
+  <p><b>Files:</b></p>
+  <select id="file-list" multiple=""></select>
+  <div id="uploaded-image-container">
+    </div>
+
+  <script src="/index.3d214d75.js" defer=""></script>
+</body>
+</html>

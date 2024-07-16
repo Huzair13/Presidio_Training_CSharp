@@ -1,0 +1,27 @@
+resourcegroup="rgHuzairCLI"
+location="westus2"
+az group create --name $resourcegroup --location $location
+
+
+vmname="vmHuzair"
+username="azureuser"
+az vm create --resource-group $resourcegroup --name $vmname --image Win2022AzureEditionCore --public-ip-sku Standard --admin-username $username
+
+
+password:
+VMHuzair@12345
+
+
+successfull:
+
+{
+  "fqdns": "",
+  "id": "/subscriptions/e34397b2-486a-417d-bd5a-b9113a4a1b0c/resourceGroups/rgHuzairCLI/providers/Microsoft.Compute/virtualMachines/vmHuzair",
+  "location": "westus2",
+  "macAddress": "00-0D-3A-F9-D1-FD",
+  "powerState": "VM running",
+  "privateIpAddress": "10.0.0.4",
+  "publicIpAddress": "52.229.24.138",
+  "resourceGroup": "rgHuzairCLI",
+  "zones": ""
+}

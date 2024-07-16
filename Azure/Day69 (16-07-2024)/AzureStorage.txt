@@ -1,0 +1,7 @@
+https://learn.microsoft.com/en-us/azure/storage/blobs/quickstart-blobs-javascript-browser
+
+https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azurite?tabs=visual-studio%2Cblob-storage
+
+
+blob service SAS URL
+https://stroragehuzair.blob.core.windows.net/?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2024-07-16T16:47:39Z&st=2024-07-16T08:47:39Z&spr=https&sig=7mVarNLOQXJRHGm8dMy81iNWatIEvFo4Yq6gnIP5sa0%3D
