@@ -1,0 +1,232 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|c:\\users\\vc\\documents\\presido training 2\\backend\\day26\\pizzaorderapisolution\\pizzaorderapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|solutionrelative:pizzaorderapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|c:\\users\\vc\\documents\\presido training 2\\backend\\day26\\pizzaorderapisolution\\pizzaorderapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|solutionrelative:pizzaorderapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|c:\\users\\vc\\documents\\presido training 2\\backend\\day26\\pizzaorderapisolution\\pizzaorderapi\\models\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|solutionrelative:pizzaorderapi\\models\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|c:\\users\\vc\\documents\\presido training 2\\backend\\day26\\pizzaorderapisolution\\pizzaorderapi\\controllers\\pizzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|solutionrelative:pizzaorderapi\\controllers\\pizzacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|c:\\users\\vc\\documents\\presido training 2\\backend\\day26\\pizzaorderapisolution\\pizzaorderapi\\exceptions\\nopizzasfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|solutionrelative:pizzaorderapi\\exceptions\\nopizzasfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|c:\\users\\vc\\documents\\presido training 2\\backend\\day26\\pizzaorderapisolution\\pizzaorderapi\\exceptions\\nopizzaexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|solutionrelative:pizzaorderapi\\exceptions\\nopizzaexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|c:\\users\\vc\\documents\\presido training 2\\backend\\day26\\pizzaorderapisolution\\pizzaorderapi\\services\\pizzaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|solutionrelative:pizzaorderapi\\services\\pizzaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|c:\\users\\vc\\documents\\presido training 2\\backend\\day26\\pizzaorderapisolution\\pizzaorderapi\\interfaces\\ipizzaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|solutionrelative:pizzaorderapi\\interfaces\\ipizzaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|c:\\users\\vc\\documents\\presido training 2\\backend\\day26\\pizzaorderapisolution\\pizzaorderapi\\contexts\\pizzaordercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|solutionrelative:pizzaorderapi\\contexts\\pizzaordercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|c:\\users\\vc\\documents\\presido training 2\\backend\\day26\\pizzaorderapisolution\\pizzaorderapi\\repositories\\pizzarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|solutionrelative:pizzaorderapi\\repositories\\pizzarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|c:\\users\\vc\\documents\\presido training 2\\backend\\day26\\pizzaorderapisolution\\pizzaorderapi\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|solutionrelative:pizzaorderapi\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|c:\\users\\vc\\documents\\presido training 2\\backend\\day26\\pizzaorderapisolution\\pizzaorderapi\\models\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9E724-0B6C-476B-9D93-600202BB8C7E}|PizzaOrderAPI\\PizzaOrderAPI.csproj|solutionrelative:pizzaorderapi\\models\\pizza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ErrorModel.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Models\\ErrorModel.cs",
+              "RelativeDocumentMoniker": "PizzaOrderAPI\\Models\\ErrorModel.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Models\\ErrorModel.cs",
+              "RelativeToolTip": "PizzaOrderAPI\\Models\\ErrorModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T11:10:34.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NoPizzasFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Exceptions\\NoPizzasFoundException.cs",
+              "RelativeDocumentMoniker": "PizzaOrderAPI\\Exceptions\\NoPizzasFoundException.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Exceptions\\NoPizzasFoundException.cs",
+              "RelativeToolTip": "PizzaOrderAPI\\Exceptions\\NoPizzasFoundException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T11:06:41.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NoPizzaException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Exceptions\\NoPizzaException.cs",
+              "RelativeDocumentMoniker": "PizzaOrderAPI\\Exceptions\\NoPizzaException.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Exceptions\\NoPizzaException.cs",
+              "RelativeToolTip": "PizzaOrderAPI\\Exceptions\\NoPizzaException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T11:06:38.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PizzaController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Controllers\\PizzaController.cs",
+              "RelativeDocumentMoniker": "PizzaOrderAPI\\Controllers\\PizzaController.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Controllers\\PizzaController.cs",
+              "RelativeToolTip": "PizzaOrderAPI\\Controllers\\PizzaController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwIAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:59:37.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Program.cs",
+              "RelativeDocumentMoniker": "PizzaOrderAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Program.cs",
+              "RelativeToolTip": "PizzaOrderAPI\\Program.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAAC4AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:52:41.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "PizzaOrderAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\appsettings.json",
+              "RelativeToolTip": "PizzaOrderAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-17T10:52:25.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PizzaServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\services\\PizzaServices.cs",
+              "RelativeDocumentMoniker": "PizzaOrderAPI\\services\\PizzaServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\services\\PizzaServices.cs",
+              "RelativeToolTip": "PizzaOrderAPI\\services\\PizzaServices.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAAEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T11:01:43.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PizzaOrderContext.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\contexts\\PizzaOrderContext.cs",
+              "RelativeDocumentMoniker": "PizzaOrderAPI\\contexts\\PizzaOrderContext.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\contexts\\PizzaOrderContext.cs",
+              "RelativeToolTip": "PizzaOrderAPI\\contexts\\PizzaOrderContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:56:25.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "PizzaOrderAPI\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "PizzaOrderAPI\\Interfaces\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:54:31.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPizzaServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Interfaces\\IPizzaServices.cs",
+              "RelativeDocumentMoniker": "PizzaOrderAPI\\Interfaces\\IPizzaServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Interfaces\\IPizzaServices.cs",
+              "RelativeToolTip": "PizzaOrderAPI\\Interfaces\\IPizzaServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:54:29.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PizzaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Repositories\\PizzaRepository.cs",
+              "RelativeDocumentMoniker": "PizzaOrderAPI\\Repositories\\PizzaRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Repositories\\PizzaRepository.cs",
+              "RelativeToolTip": "PizzaOrderAPI\\Repositories\\PizzaRepository.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAADkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:54:24.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Pizza.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Models\\Pizza.cs",
+              "RelativeDocumentMoniker": "PizzaOrderAPI\\Models\\Pizza.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\Backend\\Day26\\PizzaOrderAPISolution\\PizzaOrderAPI\\Models\\Pizza.cs",
+              "RelativeToolTip": "PizzaOrderAPI\\Models\\Pizza.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-17T10:53:54.174Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
