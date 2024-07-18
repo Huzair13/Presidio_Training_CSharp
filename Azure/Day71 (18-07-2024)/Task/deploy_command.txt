@@ -1,0 +1,8 @@
+SQL Database Server
+az deployment group create --name huzairsqldb --resource-group rgHuzair --template-file azuretemplatesql.json --parameters serverName="huzairserversql" sqlDBName="huzairdbsqlserver" administratorLogin="azureuser" administratorLoginPassword="huz@sqlserver1" location="WEST US2"
+
+Key Vault
+az deployment group create --name kvhuzair --resource-group rgHuzairTemplate --template-file azure-template-key-vault.json --parameters keyVaultName="kvhuzair13" location="WEST US2" 
+
+secret key 
+az deployment group create --name secrethuzair --resource-group rgHuzairTemplate --template-file azure-template-key-vault-secret.json --parameters keyVaultName="kvhuzair13" secretName="dbconnectionkey" secretValue="Server=tcp:huzairserversql.database.windows.net,1433;Initial Catalog=huzairdbsqlserver;Persist Security Info=False;User ID=azureuser;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"

@@ -8,3 +8,11 @@ Only GET method.
 
 
 server name : huzairsqlserver
+
+server admin login : huzairsqlserver
+pass : huz@sqlserver1
+
+
+vm:
+
+huz@virtualm1
