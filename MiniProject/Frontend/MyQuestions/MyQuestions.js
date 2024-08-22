@@ -4,13 +4,13 @@ let currentPage = 1;
 const token = localStorage.getItem('token');
 
 if (!token) {
-    window.location.href = '/Home/Home.html'
+    // window.location.href = '/Home/Home.html'
 }
 
 const userRole = localStorage.getItem('role')
 if (userRole === 'Student') {
     alert('Unauthorized');
-    window.location.href = '/LoggedInHome/LoggedInHome.html';
+    // window.location.href = '/LoggedInHome/LoggedInHome.html';
 }
 
 

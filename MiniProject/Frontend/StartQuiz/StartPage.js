@@ -14,7 +14,7 @@ let quizDataRetrived = [];
 
 const token = localStorage.getItem('token');
 if (!token) {
-    window.location.href = '/Home/Home.html'
+    // window.location.href = '/Home/Home.html'
 }
 
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     // console.log(QuizId);
 
     if (!QuizId) {
-        window.location.href = '/LoggedInHome/LoggedInHome.html';
+        // window.location.href = '/LoggedInHome/LoggedInHome.html';
         return;
     }
 

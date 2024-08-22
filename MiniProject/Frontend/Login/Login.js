@@ -54,7 +54,7 @@
             const txtUid = userIdInput.value * 1;
             const txtPass = userPassInput.value;
 
-            fetch('http://localhost:5273/api/User/Login', {
+            fetch('https://localhost:5273/api/User/Login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

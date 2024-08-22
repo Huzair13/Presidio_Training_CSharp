@@ -1,0 +1,656 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\services\\userloginandregisterservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\services\\userloginandregisterservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\exceptions\\useralreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\exceptions\\useralreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\exceptions\\unauthorizeduserexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\exceptions\\unauthorizeduserexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\interfaces\\iuserloginandregisterservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\interfaces\\iuserloginandregisterservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\interfaces\\itokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\interfaces\\itokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\services\\tokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\services\\tokenservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\errormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\repositories\\teacherrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\repositories\\userdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\repositories\\userdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\exceptions\\nosuchuserexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\exceptions\\nosuchuserexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\contexts\\quizappcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\contexts\\quizappcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\repositories\\genericuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\repositories\\genericuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\userdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\userdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\dtos\\mcqdtos\\mcqinputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\dtos\\mcqdtos\\mcqinputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\dtos\\userdtos\\userregisterinputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\dtos\\userdtos\\userregisterinputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\dtos\\userdtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\dtos\\userdtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\dtos\\userdtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\dtos\\userdtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\dtos\\userdtos\\teacherreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\dtos\\userdtos\\teacherreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\dtos\\userdtos\\registerreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\dtos\\userdtos\\registerreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\dtos\\userdtos\\loginreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\dtos\\userdtos\\loginreturndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\fillups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\fillups.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\multiplechoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\multiplechoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\responseanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\responseanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\teacher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\controllers\\quizattemptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\controllers\\quizattemptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|c:\\users\\vc\\documents\\presido training 2\\miniproject\\backend\\quizappsolution\\quizapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7BC89B0-C4FC-46A1-9531-9E3EBCC4B6E1}|QuizApp\\QuizApp.csproj|solutionrelative:quizapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserAlreadyExistsException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Exceptions\\UserAlreadyExistsException.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Exceptions\\UserAlreadyExistsException.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Exceptions\\UserAlreadyExistsException.cs",
+              "RelativeToolTip": "QuizApp\\Exceptions\\UserAlreadyExistsException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:56:41.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnauthorizedUserException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Exceptions\\UnauthorizedUserException.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Exceptions\\UnauthorizedUserException.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Exceptions\\UnauthorizedUserException.cs",
+              "RelativeToolTip": "QuizApp\\Exceptions\\UnauthorizedUserException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:54:58.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\User.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\User.cs",
+              "RelativeToolTip": "QuizApp\\Models\\User.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:10:24.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\Question.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\Question.cs",
+              "RelativeToolTip": "QuizApp\\Models\\Question.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:21:20.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserLoginAndRegisterServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Services\\UserLoginAndRegisterServices.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Services\\UserLoginAndRegisterServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Services\\UserLoginAndRegisterServices.cs*",
+              "RelativeToolTip": "QuizApp\\Services\\UserLoginAndRegisterServices.cs*",
+              "ViewState": "AQIAAJoAAAAAAAAAAADgv+QAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:47:38.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUserLoginAndRegisterServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Interfaces\\IUserLoginAndRegisterServices.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Interfaces\\IUserLoginAndRegisterServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Interfaces\\IUserLoginAndRegisterServices.cs",
+              "RelativeToolTip": "QuizApp\\Interfaces\\IUserLoginAndRegisterServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:52:26.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ITokenServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Interfaces\\ITokenServices.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Interfaces\\ITokenServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Interfaces\\ITokenServices.cs",
+              "RelativeToolTip": "QuizApp\\Interfaces\\ITokenServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:49:33.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TokenServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Services\\TokenServices.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Services\\TokenServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Services\\TokenServices.cs",
+              "RelativeToolTip": "QuizApp\\Services\\TokenServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:48:31.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Services\\UserServices.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Services\\UserServices.cs",
+              "RelativeToolTip": "QuizApp\\Services\\UserServices.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:47:39.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Controllers\\UserController.cs",
+              "RelativeToolTip": "QuizApp\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:47:27.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ErrorModel.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\ErrorModel.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\ErrorModel.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\ErrorModel.cs",
+              "RelativeToolTip": "QuizApp\\Models\\ErrorModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:46:47.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TeacherRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Repositories\\TeacherRepository.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Repositories\\TeacherRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Repositories\\TeacherRepository.cs",
+              "RelativeToolTip": "QuizApp\\Repositories\\TeacherRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:46:08.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Repositories\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Repositories\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Repositories\\StudentRepository.cs",
+              "RelativeToolTip": "QuizApp\\Repositories\\StudentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:43:29.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserDetailRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Repositories\\UserDetailRepository.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Repositories\\UserDetailRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Repositories\\UserDetailRepository.cs",
+              "RelativeToolTip": "QuizApp\\Repositories\\UserDetailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:42:39.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NoSuchUserException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Exceptions\\NoSuchUserException.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Exceptions\\NoSuchUserException.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Exceptions\\NoSuchUserException.cs",
+              "RelativeToolTip": "QuizApp\\Exceptions\\NoSuchUserException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:40:53.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "QuizAppContext.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Contexts\\QuizAppContext.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Contexts\\QuizAppContext.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Contexts\\QuizAppContext.cs",
+              "RelativeToolTip": "QuizApp\\Contexts\\QuizAppContext.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAIwBgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:32:42.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "QuizApp\\Interfaces\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:31:35.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GenericUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Repositories\\GenericUserRepository.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Repositories\\GenericUserRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Repositories\\GenericUserRepository.cs",
+              "RelativeToolTip": "QuizApp\\Repositories\\GenericUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:30:15.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "QuizApp\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:30:03.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\appsettings.json",
+              "RelativeDocumentMoniker": "QuizApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\appsettings.json",
+              "RelativeToolTip": "QuizApp\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-23T11:28:44.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "QuizApp\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\appsettings.Development.json",
+              "RelativeToolTip": "QuizApp\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-23T11:28:43.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MCQInputDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\MCQDTOs\\MCQInputDTO.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\DTOs\\MCQDTOs\\MCQInputDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\MCQDTOs\\MCQInputDTO.cs",
+              "RelativeToolTip": "QuizApp\\Models\\DTOs\\MCQDTOs\\MCQInputDTO.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:27:14.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserRegisterInputDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\UserDTOs\\UserRegisterInputDTO.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\DTOs\\UserDTOs\\UserRegisterInputDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\UserDTOs\\UserRegisterInputDTO.cs",
+              "RelativeToolTip": "QuizApp\\Models\\DTOs\\UserDTOs\\UserRegisterInputDTO.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:24:48.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserLoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\UserDTOs\\UserLoginDTO.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\DTOs\\UserDTOs\\UserLoginDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\UserDTOs\\UserLoginDTO.cs",
+              "RelativeToolTip": "QuizApp\\Models\\DTOs\\UserDTOs\\UserLoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:24:15.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserDetails.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\UserDetails.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\UserDetails.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\UserDetails.cs",
+              "RelativeToolTip": "QuizApp\\Models\\UserDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:14:17.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\UserDTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\DTOs\\UserDTOs\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\UserDTOs\\UserDTO.cs",
+              "RelativeToolTip": "QuizApp\\Models\\DTOs\\UserDTOs\\UserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:23:46.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TeacherReturnDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\UserDTOs\\TeacherReturnDTO.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\DTOs\\UserDTOs\\TeacherReturnDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\UserDTOs\\TeacherReturnDTO.cs",
+              "RelativeToolTip": "QuizApp\\Models\\DTOs\\UserDTOs\\TeacherReturnDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:23:41.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RegisterReturnDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\UserDTOs\\RegisterReturnDTO.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\DTOs\\UserDTOs\\RegisterReturnDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\UserDTOs\\RegisterReturnDTO.cs",
+              "RelativeToolTip": "QuizApp\\Models\\DTOs\\UserDTOs\\RegisterReturnDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:23:03.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LoginReturnDTO.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\UserDTOs\\LoginReturnDTO.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\DTOs\\UserDTOs\\LoginReturnDTO.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\DTOs\\UserDTOs\\LoginReturnDTO.cs",
+              "RelativeToolTip": "QuizApp\\Models\\DTOs\\UserDTOs\\LoginReturnDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:22:01.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "FillUps.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\FillUps.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\FillUps.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\FillUps.cs",
+              "RelativeToolTip": "QuizApp\\Models\\FillUps.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:21:24.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MultipleChoice.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\MultipleChoice.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\MultipleChoice.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\MultipleChoice.cs",
+              "RelativeToolTip": "QuizApp\\Models\\MultipleChoice.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:21:23.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ResponseAnswer.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\ResponseAnswer.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\ResponseAnswer.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\ResponseAnswer.cs",
+              "RelativeToolTip": "QuizApp\\Models\\ResponseAnswer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:21:19.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\Response.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\Response.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\Response.cs",
+              "RelativeToolTip": "QuizApp\\Models\\Response.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:21:18.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Teacher.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\Teacher.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\Teacher.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\Teacher.cs",
+              "RelativeToolTip": "QuizApp\\Models\\Teacher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:21:17.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Models\\Student.cs",
+              "RelativeToolTip": "QuizApp\\Models\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T11:15:42.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "QuizAttemptController.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Controllers\\QuizAttemptController.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Controllers\\QuizAttemptController.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Controllers\\QuizAttemptController.cs",
+              "RelativeToolTip": "QuizApp\\Controllers\\QuizAttemptController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T09:32:20.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Program.cs",
+              "RelativeDocumentMoniker": "QuizApp\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\Program.cs",
+              "RelativeToolTip": "QuizApp\\Program.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAIA2wBYAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T09:32:09.167Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

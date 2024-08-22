@@ -2987,11 +2987,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\VC\\source\\repos\\MiniProject\\QuizAppSolution\\QuizApp\\QuizApp.csproj",
+      "projectUniqueName": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\QuizApp.csproj",
       "projectName": "QuizApp",
-      "projectPath": "C:\\Users\\VC\\source\\repos\\MiniProject\\QuizAppSolution\\QuizApp\\QuizApp.csproj",
+      "projectPath": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\QuizApp.csproj",
       "packagesPath": "C:\\Users\\VC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\VC\\source\\repos\\MiniProject\\QuizAppSolution\\QuizApp\\obj\\",
+      "outputPath": "C:\\Users\\VC\\Documents\\Presido Training 2\\MiniProject\\Backend\\QuizAppSolution\\QuizApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
